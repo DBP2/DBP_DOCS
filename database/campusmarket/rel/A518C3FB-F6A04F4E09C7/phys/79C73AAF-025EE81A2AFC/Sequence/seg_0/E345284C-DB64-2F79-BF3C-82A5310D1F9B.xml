@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<SequenceOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.SequenceOraclev10g" name="SEQ_SAFE_ZONE_RECORD" directorySegmentName="seg_0" id="E345284C-DB64-2F79-BF3C-82A5310D1F9B">
+<createdBy>jjso0</createdBy>
+<createdTime>2026-10-24 18:51:27 UTC</createdTime>
+<ownerDesignName>campusmarket</ownerDesignName>
+<incrementBy>1</incrementBy>
+<startWith>1</startWith>
+</SequenceOraclev10g>

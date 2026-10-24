@@ -1,0 +1,177 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="4BD5039C-C2DC-39AA-BE3F-584F531DC7C6" name="CHAT_ROOM">
+<createdBy>jjso0</createdBy>
+<createdTime>2026-10-24 18:23:55 UTC</createdTime>
+<comment><![CDATA[게시글 1개에 대한 판매자–문의자 1:1 채팅방. (게시글, 문의자)당 1개]]></comment>
+<generatorID>236C1AC9-693A-05C9-3F59-7A5B3A1744A5</generatorID>
+<ownerDesignName>campusmarket</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="CHAT_ROOM_ID" id="CE3198BF-B9DC-24F5-849E-06C1C046C864">
+<createdBy>jjso0</createdBy>
+<createdTime>2026-10-24 18:23:55 UTC</createdTime>
+<generatorID>DE0F9425-E73F-13A2-E483-0FDF994E26E3</generatorID>
+<ownerDesignName>campusmarket</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CREATED_AT" id="E005C284-ED62-5529-9CDB-A3CA388F041D">
+<createdBy>jjso0</createdBy>
+<createdTime>2026-10-24 18:23:55 UTC</createdTime>
+<generatorID>FB7C61BA-EA81-9839-806B-2EF4D63778E3</generatorID>
+<ownerDesignName>campusmarket</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<defaultValue>SYSDATE</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="LAST_MESSAGE_AT" id="4627BE36-8A66-2AA4-8D6B-3BFD6C7CEB8E">
+<createdBy>jjso0</createdBy>
+<createdTime>2026-10-24 18:23:55 UTC</createdTime>
+<generatorID>D3ECA677-48FC-ACEA-395E-2C41344EA8E1</generatorID>
+<ownerDesignName>campusmarket</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="BUYER_ID" id="77D14D86-678E-361A-2026-C86B0FA77F49">
+<createdBy>jjso0</createdBy>
+<createdTime>2026-10-24 18:23:55 UTC</createdTime>
+<generatorID>1EF1DC17-1A49-229C-20A5-65078D284124</generatorID>
+<ownerDesignName>campusmarket</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="396C7CB1-12A0-23E7-5CE0-6B88FD50A257" referredColumn="4224126A-9740-85BC-5D48-2ECC0B0627AE"/>
+</associations>
+</Column>
+<Column name="TRADE_ID" id="F2C4222E-95BC-6D2D-BA81-31CD66D53839">
+<createdBy>jjso0</createdBy>
+<createdTime>2026-10-24 18:23:55 UTC</createdTime>
+<generatorID>B5A68BCA-ABCB-BB9E-F623-403EFBBB8A50</generatorID>
+<ownerDesignName>campusmarket</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="51EC2707-4A42-304B-5BEA-BA8050D9B4AD" referredColumn="0BC5ECC9-472B-F3D6-9C01-E59FF27083CC"/>
+</associations>
+</Column>
+<Column name="POST_ID" id="3C024AEE-DA70-706A-43E8-981EBFCF19D8">
+<createdBy>jjso0</createdBy>
+<createdTime>2026-10-24 18:23:55 UTC</createdTime>
+<generatorID>F88BAB7C-C386-F511-CAC9-17284C8AF6A0</generatorID>
+<ownerDesignName>campusmarket</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="FDCC2557-D91B-5D39-1D46-A3413B8FAE89" referredColumn="A84CD951-4548-76CC-4ED6-3D2BCC83A35F"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="AF03A9A0-AFC5-C2B6-4390-2A5F4DDC514B" name="CHAT_ROOM_PK">
+<createdBy>jjso0</createdBy>
+<createdTime>2026-10-24 18:23:55 UTC</createdTime>
+<generatorID>AB0D9B04-DD58-9EE4-A3F7-124CF3504319</generatorID>
+<ownerDesignName>campusmarket</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CE3198BF-B9DC-24F5-849E-06C1C046C864"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="28E9A6E9-AD59-216B-22C4-147AD9CB442D" name="CHAT_ROOM_BUYER_UK">
+<createdBy>jjso0</createdBy>
+<createdTime>2026-10-24 18:40:17 UTC</createdTime>
+<comment><![CDATA[게시글·문의자당 방 1개]]></comment>
+<ownerDesignName>campusmarket</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3C024AEE-DA70-706A-43E8-981EBFCF19D8"/>
+<colUsage columnID="77D14D86-678E-361A-2026-C86B0FA77F49"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F459EABE-288F-A7CA-5AAA-9F717DD670AB" name="CHAT_ROOM_BUYER_IDX">
+<createdBy>jjso0</createdBy>
+<createdTime>2026-10-24 18:33:19 UTC</createdTime>
+<comment><![CDATA[내가 건 채팅 목록]]></comment>
+<ownerDesignName>campusmarket</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="77D14D86-678E-361A-2026-C86B0FA77F49"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="DC07E794-50FA-2EC2-7882-9FEE1CBD32E9" name="CHAT_ROOM_TRADE_IDX">
+<createdBy>jjso0</createdBy>
+<createdTime>2026-10-24 18:40:49 UTC</createdTime>
+<comment><![CDATA[거래 상세에서 채팅방 찾기]]></comment>
+<ownerDesignName>campusmarket</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F2C4222E-95BC-6D2D-BA81-31CD66D53839"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="ED0C8DA5-982B-23FF-F0F1-A5DC23BDDE1E" name="CHAT_ROOM_BUYER_FK">
+<createdBy>jjso0</createdBy>
+<createdTime>2026-10-24 18:23:55 UTC</createdTime>
+<generatorID>DDFAEE2F-4B2A-9E34-B032-CEF7048B1B14</generatorID>
+<ownerDesignName>campusmarket</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="77D14D86-678E-361A-2026-C86B0FA77F49"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F20DABAB-97F6-0FD4-AB88-79F53B768F42" name="CHAT_ROOM_POST_FK">
+<createdBy>jjso0</createdBy>
+<createdTime>2026-10-24 18:23:55 UTC</createdTime>
+<generatorID>A2D6EE10-1593-5A67-4C74-AC7934FEA7BB</generatorID>
+<ownerDesignName>campusmarket</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3C024AEE-DA70-706A-43E8-981EBFCF19D8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E30D5F73-86CC-A4A6-FBD8-76C19B5441EA" name="CHAT_ROOM_TRADE_FK">
+<createdBy>jjso0</createdBy>
+<createdTime>2026-10-24 18:23:55 UTC</createdTime>
+<generatorID>74B563B3-529B-D211-2827-63564025F9A2</generatorID>
+<ownerDesignName>campusmarket</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F2C4222E-95BC-6D2D-BA81-31CD66D53839"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

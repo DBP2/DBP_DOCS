@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="0BC0741B-A030-B475-BC6E-747D7752E918" containerWithKeyObject="03BD46C3-22EB-706A-2B6D-E969DED8A6CB" localFKIndex="BF3A022F-CFE4-E699-554D-748434D8B3B6" name="CHAT_MESSAGE_SENDER_FK">
+<createdBy>jjso0</createdBy>
+<createdTime>2026-10-24 18:23:55 UTC</createdTime>
+<comment><![CDATA[메시지를 보낸 회원. 시스템 안내 메시지는 NULL]]></comment>
+<generatorID>24ABF716-A69B-3C8C-07EA-89E24B3A0571</generatorID>
+<ownerDesignName>campusmarket</ownerDesignName>
+<referredTableLongName>MEMBER</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>6504F184-6D3C-CFF5-059B-846A4589EA7E</referredTableID>
+<keyObject>2EB10552-8B9F-EA11-4ADA-A1D0DB5CBE0B</keyObject>
+<referredKeyID>2EB10552-8B9F-EA11-4ADA-A1D0DB5CBE0B</referredKeyID>
+<mandatory>false</mandatory>
+<refColNames>USER_ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

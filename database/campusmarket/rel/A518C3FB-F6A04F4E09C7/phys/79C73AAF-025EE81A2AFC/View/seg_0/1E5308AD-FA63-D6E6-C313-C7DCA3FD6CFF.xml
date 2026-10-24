@@ -1,0 +1,6 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableViewProxyOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.TableViewProxyOraclev10g" name="TRADE_SZ_STATUS_V" directorySegmentName="seg_0" id="1E5308AD-FA63-D6E6-C313-C7DCA3FD6CFF">
+<createdBy>jjso0</createdBy>
+<createdTime>2026-10-24 18:50:13 UTC</createdTime>
+<ownerDesignName>campusmarket</ownerDesignName>
+</TableViewProxyOraclev10g>

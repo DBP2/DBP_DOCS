@@ -1,0 +1,68 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev12c class="oracle.dbtools.crest.model.design.storage.oracle.v12c.TableProxyOraclev12c" name="SAFE_ZONE" directorySegmentName="seg_0" id="5F40D2BB-2218-48D8-A33A-E776297F4EAF">
+<createdBy>jjso0</createdBy>
+<createdTime>2026-10-24 18:50:13 UTC</createdTime>
+<ownerDesignName>campusmarket</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="MANUAL_CODE" id="008B6D11-AA23-0B74-6E6C-19E5EE263B1F">
+<createdBy>jjso0</createdBy>
+<createdTime>2026-10-24 18:50:13 UTC</createdTime>
+<ownerDesignName>campusmarket</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="CLOSE_TIME" id="0B813185-C3A6-AA28-FCA5-97DD15FF7DAC">
+<createdBy>jjso0</createdBy>
+<createdTime>2026-10-24 18:50:13 UTC</createdTime>
+<ownerDesignName>campusmarket</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ZONE_NAME" id="1A062F05-2C32-1015-BF15-27CBA333A051">
+<createdBy>jjso0</createdBy>
+<createdTime>2026-10-24 18:50:13 UTC</createdTime>
+<ownerDesignName>campusmarket</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="OPEN_TIME" id="4530C79F-ADB7-2FCB-F863-53398141B48F">
+<createdBy>jjso0</createdBy>
+<createdTime>2026-10-24 18:50:13 UTC</createdTime>
+<ownerDesignName>campusmarket</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="LOCATION_DETAIL" id="4F00967A-ACF9-19D2-507E-F9775ABF71F7">
+<createdBy>jjso0</createdBy>
+<createdTime>2026-10-24 18:50:13 UTC</createdTime>
+<ownerDesignName>campusmarket</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="QR_TOKEN" id="79800325-4ADA-2A5B-7B7B-EC12229E884A">
+<createdBy>jjso0</createdBy>
+<createdTime>2026-10-24 18:50:13 UTC</createdTime>
+<ownerDesignName>campusmarket</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="SAFE_ZONE_ID" id="CADE850C-AF66-AEC1-15AB-49FF88A4305A">
+<createdBy>jjso0</createdBy>
+<createdTime>2026-10-24 18:50:13 UTC</createdTime>
+<ownerDesignName>campusmarket</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="SAFE_ZONE_CODE_UK" id="11588338-694A-F10B-17EB-94DA64DB1E1C">
+<createdBy>jjso0</createdBy>
+<createdTime>2026-10-24 18:50:13 UTC</createdTime>
+<ownerDesignName>campusmarket</ownerDesignName>
+</IndexProxy>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="SAFE_ZONE_QR_UK" id="AE748B11-91B7-FEDA-7588-D2E5C27E74BE">
+<createdBy>jjso0</createdBy>
+<createdTime>2026-10-24 18:50:13 UTC</createdTime>
+<ownerDesignName>campusmarket</ownerDesignName>
+</IndexProxy>
+</indexProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="SAFE_ZONE_PK" id="6216F421-BD5E-5C70-A3CE-86A83B95C7DD">
+<createdBy>jjso0</createdBy>
+<createdTime>2026-10-24 18:50:13 UTC</createdTime>
+<ownerDesignName>campusmarket</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev12c>

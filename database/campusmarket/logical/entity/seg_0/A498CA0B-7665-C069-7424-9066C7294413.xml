@@ -1,0 +1,61 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="A498CA0B-7665-C069-7424-9066C7294413" name="TRADE">
+<createdBy>jjso0</createdBy>
+<createdTime>2026-10-24 17:59:10 UTC</createdTime>
+<ownerDesignName>campusmarket</ownerDesignName>
+<engineerTo>
+<item key="A518C3FB-5317-A641-7DDD-F6A04F4E09C7" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="TRADE_ID" id="B94F2F7E-B7F4-0AA4-78C1-087915B94183">
+<createdBy>jjso0</createdBy>
+<createdTime>2026-10-24 17:59:20 UTC</createdTime>
+<ownerDesignName>campusmarket</ownerDesignName>
+<engineerTo>
+<item key="A518C3FB-5317-A641-7DDD-F6A04F4E09C7" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="SAFE_ZONE_ID" id="EE93954D-C80E-8D27-9E74-23D77208161A">
+<createdBy>jjso0</createdBy>
+<createdTime>2026-10-24 18:08:43 UTC</createdTime>
+<generatorID>0DBFEF84-CFE4-EA9C-D19F-E94AB8846841</generatorID>
+<ownerDesignName>campusmarket</ownerDesignName>
+<engineerTo>
+<item key="A518C3FB-5317-A641-7DDD-F6A04F4E09C7" value="true"/>
+</engineerTo>
+<referedAttribute>535EDCBF-7FC5-7358-07CD-4DC6B3CCEEA5</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="2CFBD3F0-1E72-6737-6540-D99B2A8D4C77" name="TRADE PK">
+<createdBy>jjso0</createdBy>
+<createdTime>2026-10-24 17:59:38 UTC</createdTime>
+<ownerDesignName>campusmarket</ownerDesignName>
+<engineerTo>
+<item key="A518C3FB-5317-A641-7DDD-F6A04F4E09C7" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>B94F2F7E-B7F4-0AA4-78C1-087915B94183</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

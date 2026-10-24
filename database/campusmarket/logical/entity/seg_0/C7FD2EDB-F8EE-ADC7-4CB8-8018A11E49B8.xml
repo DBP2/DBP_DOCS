@@ -1,0 +1,132 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="C7FD2EDB-F8EE-ADC7-4CB8-8018A11E49B8" name="SAFE_ZONE_RECORD">
+<createdBy>jjso0</createdBy>
+<createdTime>2026-10-24 17:49:05 UTC</createdTime>
+<comment><![CDATA[Safe Zone 두고가기(DROP_OFF)·가져가기(PICK_UP) 1회 기록과 인증 사진. 저장 후 수정 불가]]></comment>
+<ownerDesignName>campusmarket</ownerDesignName>
+<engineerTo>
+<item key="A518C3FB-5317-A641-7DDD-F6A04F4E09C7" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="RECORD_ID" id="92159AA2-88A8-450B-CF84-E599148AA040">
+<createdBy>jjso0</createdBy>
+<createdTime>2026-10-24 17:49:16 UTC</createdTime>
+<ownerDesignName>campusmarket</ownerDesignName>
+<engineerTo>
+<item key="A518C3FB-5317-A641-7DDD-F6A04F4E09C7" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="RECORD_ACTION" id="CCFB8CED-6EEA-DA55-B41E-D4AB56247F26">
+<createdBy>jjso0</createdBy>
+<createdTime>2026-10-24 17:49:55 UTC</createdTime>
+<ownerDesignName>campusmarket</ownerDesignName>
+<engineerTo>
+<item key="A518C3FB-5317-A641-7DDD-F6A04F4E09C7" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<listOfValues>
+<valueDef value="DROP_OFF" description=""/>
+<valueDef value="PICK_UP" description=""/>
+</listOfValues>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="PHOTO_URL" id="9504420A-7DC7-E6D9-416E-652A3941C387">
+<createdBy>jjso0</createdBy>
+<createdTime>2026-10-24 17:50:52 UTC</createdTime>
+<ownerDesignName>campusmarket</ownerDesignName>
+<engineerTo>
+<item key="A518C3FB-5317-A641-7DDD-F6A04F4E09C7" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>500</dataTypeSize>
+<ownDataTypeParameters>500,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="PHOTO_TAKEN_AT" id="D46DFAAF-46E2-3AD8-61A0-0F50402C44AF">
+<createdBy>jjso0</createdBy>
+<createdTime>2026-10-24 17:51:13 UTC</createdTime>
+<ownerDesignName>campusmarket</ownerDesignName>
+<engineerTo>
+<item key="A518C3FB-5317-A641-7DDD-F6A04F4E09C7" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="RECORDED_AT" id="FDD4DEBC-3F01-9103-06F0-5CAF2658270A">
+<createdBy>jjso0</createdBy>
+<createdTime>2026-10-24 17:51:29 UTC</createdTime>
+<ownerDesignName>campusmarket</ownerDesignName>
+<engineerTo>
+<item key="A518C3FB-5317-A641-7DDD-F6A04F4E09C7" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<defaultValue>SYSDATE</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="TRADE_ID" id="9741AFF7-097F-651F-E573-87A51EBF6ACC">
+<createdBy>jjso0</createdBy>
+<createdTime>2026-10-24 18:06:37 UTC</createdTime>
+<generatorID>859EF736-ED06-3C41-5986-B93236AFB544</generatorID>
+<ownerDesignName>campusmarket</ownerDesignName>
+<engineerTo>
+<item key="A518C3FB-5317-A641-7DDD-F6A04F4E09C7" value="true"/>
+</engineerTo>
+<referedAttribute>B94F2F7E-B7F4-0AA4-78C1-087915B94183</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="USER_ID" id="539DF296-75C1-BD16-B0D1-010A6A0FC611">
+<createdBy>jjso0</createdBy>
+<createdTime>2026-10-24 18:07:00 UTC</createdTime>
+<generatorID>4675E1B9-82C1-755E-7374-50225C41A60B</generatorID>
+<ownerDesignName>campusmarket</ownerDesignName>
+<engineerTo>
+<item key="A518C3FB-5317-A641-7DDD-F6A04F4E09C7" value="true"/>
+</engineerTo>
+<referedAttribute>6677A75E-C576-0059-2DDC-0AA25B2F8F6B</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="7EF992F4-0708-D5C6-F498-C449FB157581" name="SAFE_ZONE_RECORD PK">
+<createdBy>jjso0</createdBy>
+<createdTime>2026-10-24 17:49:40 UTC</createdTime>
+<ownerDesignName>campusmarket</ownerDesignName>
+<engineerTo>
+<item key="A518C3FB-5317-A641-7DDD-F6A04F4E09C7" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>92159AA2-88A8-450B-CF84-E599148AA040</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

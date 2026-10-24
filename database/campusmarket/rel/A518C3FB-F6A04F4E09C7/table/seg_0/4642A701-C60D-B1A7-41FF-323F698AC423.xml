@@ -1,0 +1,65 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="4642A701-C60D-B1A7-41FF-323F698AC423" name="POST">
+<createdBy>jjso0</createdBy>
+<createdTime>2026-10-24 18:23:55 UTC</createdTime>
+<generatorID>F047D0D0-817D-C2AD-245B-A97828F14E38</generatorID>
+<ownerDesignName>campusmarket</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="POST_ID" id="A84CD951-4548-76CC-4ED6-3D2BCC83A35F">
+<createdBy>jjso0</createdBy>
+<createdTime>2026-10-24 18:23:55 UTC</createdTime>
+<generatorID>65EB2E7D-FB1D-714E-B104-CB3E96B6A26E</generatorID>
+<ownerDesignName>campusmarket</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SAFE_ZONE_ID" id="2E440E79-DD54-AD12-5B67-CE38B777FF28">
+<createdBy>jjso0</createdBy>
+<createdTime>2026-10-24 18:23:55 UTC</createdTime>
+<generatorID>044B4F53-C73C-AD7A-977A-4DE22BF1D6B3</generatorID>
+<ownerDesignName>campusmarket</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="FF7E0FBE-38F8-9987-825F-F502C5BA8E5D" referredColumn="CADE850C-AF66-AEC1-15AB-49FF88A4305A"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="BE8FFF61-0A76-9119-C81E-BE1CC1E3305D" name="POST_PK">
+<createdBy>jjso0</createdBy>
+<createdTime>2026-10-24 18:23:55 UTC</createdTime>
+<generatorID>A0D8A63F-990F-67D9-8C61-29DA0240F50A</generatorID>
+<ownerDesignName>campusmarket</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A84CD951-4548-76CC-4ED6-3D2BCC83A35F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="CC33987D-31CA-90CD-FC7B-38EC54FDD9B0" name="POST_SAFE_ZONE_FK">
+<createdBy>jjso0</createdBy>
+<createdTime>2026-10-24 18:23:55 UTC</createdTime>
+<generatorID>77D0C772-1BE3-FB27-669C-CEE9891F0D02</generatorID>
+<ownerDesignName>campusmarket</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2E440E79-DD54-AD12-5B67-CE38B777FF28"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

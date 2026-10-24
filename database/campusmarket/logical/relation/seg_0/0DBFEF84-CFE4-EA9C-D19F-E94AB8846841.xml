@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="trade_safe_zone" directorySegmentName="seg_0" id="0DBFEF84-CFE4-EA9C-D19F-E94AB8846841">
+<createdBy>jjso0</createdBy>
+<createdTime>2026-10-24 18:08:43 UTC</createdTime>
+<comment><![CDATA[거래가 진행될 Safe Zone 장소. 대면·비대면 모두 필수. 게시글 장소를 신청 시점에 복사해 두어, 게시글이 수정돼도 약속 장소 유지]]></comment>
+<ownerDesignName>campusmarket</ownerDesignName>
+<engineerTo>
+<item key="A518C3FB-5317-A641-7DDD-F6A04F4E09C7" value="true"/>
+</engineerTo>
+<sourcePk>D95C5B6A-E070-28E4-73BC-33C893C87D17</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>668309F7-1AD6-85CA-564D-2F91FE366B89</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>A498CA0B-7665-C069-7424-9066C7294413</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

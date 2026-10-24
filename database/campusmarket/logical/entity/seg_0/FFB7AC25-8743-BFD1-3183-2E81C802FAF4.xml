@@ -1,0 +1,155 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="FFB7AC25-8743-BFD1-3183-2E81C802FAF4" name="CHAT_MESSAGE">
+<createdBy>jjso0</createdBy>
+<createdTime>2026-10-24 17:54:56 UTC</createdTime>
+<comment><![CDATA[채팅 메시지 1개. TEXT / IMAGE / SYSTEM(자동 안내, 보낸 사람 없음)]]></comment>
+<ownerDesignName>campusmarket</ownerDesignName>
+<engineerTo>
+<item key="A518C3FB-5317-A641-7DDD-F6A04F4E09C7" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="MESSAGE_ID" id="E4AEE653-02AC-3224-275D-7D559F8349AC">
+<createdBy>jjso0</createdBy>
+<createdTime>2026-10-24 17:55:07 UTC</createdTime>
+<ownerDesignName>campusmarket</ownerDesignName>
+<engineerTo>
+<item key="A518C3FB-5317-A641-7DDD-F6A04F4E09C7" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="MESSAGE_TYPE" id="4C79BF7F-A593-37BE-9E66-6C66A69BA328">
+<createdBy>jjso0</createdBy>
+<createdTime>2026-10-24 17:55:23 UTC</createdTime>
+<ownerDesignName>campusmarket</ownerDesignName>
+<engineerTo>
+<item key="A518C3FB-5317-A641-7DDD-F6A04F4E09C7" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<listOfValues>
+<valueDef value="IMAGE" description=""/>
+<valueDef value="SYSTEM" description=""/>
+<valueDef value="TEXT" description=""/>
+</listOfValues>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="CONTENT" id="1E434ED5-2CDC-E85C-9EBE-DA3E5B854839">
+<createdBy>jjso0</createdBy>
+<createdTime>2026-10-24 17:56:03 UTC</createdTime>
+<ownerDesignName>campusmarket</ownerDesignName>
+<engineerTo>
+<item key="A518C3FB-5317-A641-7DDD-F6A04F4E09C7" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1000</dataTypeSize>
+<ownDataTypeParameters>1000,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="IMAGE_URL" id="83A222CE-F513-21E4-C3C8-8959C87AEDD0">
+<createdBy>jjso0</createdBy>
+<createdTime>2026-10-24 17:56:29 UTC</createdTime>
+<ownerDesignName>campusmarket</ownerDesignName>
+<engineerTo>
+<item key="A518C3FB-5317-A641-7DDD-F6A04F4E09C7" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>500</dataTypeSize>
+<ownDataTypeParameters>500,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="SENT_AT" id="15D321D4-EB2E-05C9-D916-3B4F759043BE">
+<createdBy>jjso0</createdBy>
+<createdTime>2026-10-24 17:56:42 UTC</createdTime>
+<ownerDesignName>campusmarket</ownerDesignName>
+<engineerTo>
+<item key="A518C3FB-5317-A641-7DDD-F6A04F4E09C7" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<defaultValue>SYSDATE</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="IS_READ" id="79C3DE17-D163-D6C0-5761-02E8F12245BD">
+<createdBy>jjso0</createdBy>
+<createdTime>2026-10-24 17:57:16 UTC</createdTime>
+<ownerDesignName>campusmarket</ownerDesignName>
+<engineerTo>
+<item key="A518C3FB-5317-A641-7DDD-F6A04F4E09C7" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<listOfValues>
+<valueDef value="N" description=""/>
+<valueDef value="Y" description=""/>
+</listOfValues>
+<defaultValue>N</defaultValue>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="CHAT_ROOM_ID" id="807DF26E-02EC-7AC6-44FD-978835D6B75B">
+<createdBy>jjso0</createdBy>
+<createdTime>2026-10-24 18:08:05 UTC</createdTime>
+<generatorID>ED325404-915C-BD37-76D0-048D27A44022</generatorID>
+<ownerDesignName>campusmarket</ownerDesignName>
+<engineerTo>
+<item key="A518C3FB-5317-A641-7DDD-F6A04F4E09C7" value="true"/>
+</engineerTo>
+<referedAttribute>DE0F9425-E73F-13A2-E483-0FDF994E26E3</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="USER_ID" id="2E5EB45A-D757-225E-6729-1742BCCDAA21">
+<createdBy>jjso0</createdBy>
+<createdTime>2026-10-24 18:08:16 UTC</createdTime>
+<generatorID>24ABF716-A69B-3C8C-07EA-89E24B3A0571</generatorID>
+<ownerDesignName>campusmarket</ownerDesignName>
+<engineerTo>
+<item key="A518C3FB-5317-A641-7DDD-F6A04F4E09C7" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>6677A75E-C576-0059-2DDC-0AA25B2F8F6B</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="87C66CEF-3617-41C4-26F7-77C99D85F561" name="CHAT_MESSAGE PK">
+<createdBy>jjso0</createdBy>
+<createdTime>2026-10-24 17:55:21 UTC</createdTime>
+<ownerDesignName>campusmarket</ownerDesignName>
+<engineerTo>
+<item key="A518C3FB-5317-A641-7DDD-F6A04F4E09C7" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>E4AEE653-02AC-3224-275D-7D559F8349AC</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

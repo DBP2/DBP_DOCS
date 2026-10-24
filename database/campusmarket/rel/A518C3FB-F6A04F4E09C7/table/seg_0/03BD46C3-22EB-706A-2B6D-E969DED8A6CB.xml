@@ -1,0 +1,185 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="03BD46C3-22EB-706A-2B6D-E969DED8A6CB" name="CHAT_MESSAGE">
+<createdBy>jjso0</createdBy>
+<createdTime>2026-10-24 18:23:55 UTC</createdTime>
+<comment><![CDATA[채팅 메시지 1개. TEXT / IMAGE / SYSTEM(자동 안내, 보낸 사람 없음)]]></comment>
+<generatorID>FFB7AC25-8743-BFD1-3183-2E81C802FAF4</generatorID>
+<ownerDesignName>campusmarket</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="MESSAGE_ID" id="FBCD9906-901D-06FF-70AD-3ECA8FE4327B">
+<createdBy>jjso0</createdBy>
+<createdTime>2026-10-24 18:23:55 UTC</createdTime>
+<generatorID>E4AEE653-02AC-3224-275D-7D559F8349AC</generatorID>
+<ownerDesignName>campusmarket</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MESSAGE_TYPE" id="8EB04969-DCEB-7E04-552B-4A44610E62E8">
+<createdBy>jjso0</createdBy>
+<createdTime>2026-10-24 18:23:55 UTC</createdTime>
+<generatorID>4C79BF7F-A593-37BE-9E66-6C66A69BA328</generatorID>
+<ownerDesignName>campusmarket</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<listOfValues>
+<valueDef value="IMAGE" description=""/>
+<valueDef value="SYSTEM" description=""/>
+<valueDef value="TEXT" description=""/>
+</listOfValues>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CONTENT" id="1991BE1D-C1F4-7D9D-A0C9-FCC80327DCBE">
+<createdBy>jjso0</createdBy>
+<createdTime>2026-10-24 18:23:55 UTC</createdTime>
+<generatorID>1E434ED5-2CDC-E85C-9EBE-DA3E5B854839</generatorID>
+<ownerDesignName>campusmarket</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1000</dataTypeSize>
+<ownDataTypeParameters>1000,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="IMAGE_URL" id="FB8C039D-2CE1-A087-59D5-14387575B76B">
+<createdBy>jjso0</createdBy>
+<createdTime>2026-10-24 18:23:55 UTC</createdTime>
+<generatorID>83A222CE-F513-21E4-C3C8-8959C87AEDD0</generatorID>
+<ownerDesignName>campusmarket</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>500</dataTypeSize>
+<ownDataTypeParameters>500,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SENT_AT" id="31FF273D-9000-5241-60E1-C95A6B892A3D">
+<createdBy>jjso0</createdBy>
+<createdTime>2026-10-24 18:23:55 UTC</createdTime>
+<generatorID>15D321D4-EB2E-05C9-D916-3B4F759043BE</generatorID>
+<ownerDesignName>campusmarket</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<defaultValue>SYSDATE</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="IS_READ" id="1826A27E-AEE6-9F4A-7F37-5ACA9A7062D2">
+<createdBy>jjso0</createdBy>
+<createdTime>2026-10-24 18:23:55 UTC</createdTime>
+<generatorID>79C3DE17-D163-D6C0-5761-02E8F12245BD</generatorID>
+<ownerDesignName>campusmarket</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<listOfValues>
+<valueDef value="N" description=""/>
+<valueDef value="Y" description=""/>
+</listOfValues>
+<defaultValue>N</defaultValue>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CHAT_ROOM_ID" id="F4ECFC7C-7292-1E67-36EF-92F7CF7C37CF">
+<createdBy>jjso0</createdBy>
+<createdTime>2026-10-24 18:23:55 UTC</createdTime>
+<generatorID>807DF26E-02EC-7AC6-44FD-978835D6B75B</generatorID>
+<ownerDesignName>campusmarket</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="F1F6EACA-3DB8-A996-EED3-A652532F56C2" referredColumn="CE3198BF-B9DC-24F5-849E-06C1C046C864"/>
+</associations>
+</Column>
+<Column name="SENDER_ID" id="01A663A8-2274-98AA-4C34-6C70B30B74A9">
+<createdBy>jjso0</createdBy>
+<createdTime>2026-10-24 18:23:55 UTC</createdTime>
+<generatorID>2E5EB45A-D757-225E-6729-1742BCCDAA21</generatorID>
+<ownerDesignName>campusmarket</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="0BC0741B-A030-B475-BC6E-747D7752E918" referredColumn="4224126A-9740-85BC-5D48-2ECC0B0627AE"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="D5575A77-564F-EF46-E27B-8E98E9035773" name="CHAT_MESSAGE_PK">
+<createdBy>jjso0</createdBy>
+<createdTime>2026-10-24 18:23:55 UTC</createdTime>
+<generatorID>87C66CEF-3617-41C4-26F7-77C99D85F561</generatorID>
+<ownerDesignName>campusmarket</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FBCD9906-901D-06FF-70AD-3ECA8FE4327B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B63E71BF-9F5D-6F42-63D2-946F5835FF12" name="CHAT_MESSAGE_ROOM_IDX">
+<createdBy>jjso0</createdBy>
+<createdTime>2026-10-24 18:38:53 UTC</createdTime>
+<comment><![CDATA[채팅방 메시지를 시간순으로 불러오기]]></comment>
+<ownerDesignName>campusmarket</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F4ECFC7C-7292-1E67-36EF-92F7CF7C37CF"/>
+<colUsage columnID="31FF273D-9000-5241-60E1-C95A6B892A3D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2DF916D2-9FB5-6347-0AD5-386E5174CCE2" name="CHAT_MESSAGE_CHAT_ROOM_FK">
+<createdBy>jjso0</createdBy>
+<createdTime>2026-10-24 18:23:55 UTC</createdTime>
+<generatorID>ED325404-915C-BD37-76D0-048D27A44022</generatorID>
+<ownerDesignName>campusmarket</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F4ECFC7C-7292-1E67-36EF-92F7CF7C37CF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="BF3A022F-CFE4-E699-554D-748434D8B3B6" name="CHAT_MESSAGE_SENDER_FK">
+<createdBy>jjso0</createdBy>
+<createdTime>2026-10-24 18:23:55 UTC</createdTime>
+<generatorID>24ABF716-A69B-3C8C-07EA-89E24B3A0571</generatorID>
+<ownerDesignName>campusmarket</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="01A663A8-2274-98AA-4C34-6C70B30B74A9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+<tableCheckConstraints itemClass="oracle.dbtools.crest.model.design.constraint.TableLevelConstraint">
+<tableCheckConstraint name="CHAT_MESSAGE_CK" directorySegmentName="seg_0" id="BECDF7D4-926F-9705-BFB8-02C3B63B1E73">
+<createdBy>jjso0</createdBy>
+<createdTime>2026-10-24 18:38:05 UTC</createdTime>
+<ownerDesignName>campusmarket</ownerDesignName>
+<rule><![CDATA[(MESSAGE_TYPE = 'SYSTEM' AND SENDER_ID IS NULL) OR (MESSAGE_TYPE <> 'SYSTEM' AND SENDER_ID IS NOT NULL)]]></rule>
+</tableCheckConstraint>
+</tableCheckConstraints>
+</Table>
