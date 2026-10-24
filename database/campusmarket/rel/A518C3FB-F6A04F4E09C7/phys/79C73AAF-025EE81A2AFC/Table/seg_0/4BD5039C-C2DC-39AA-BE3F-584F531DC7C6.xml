@@ -1,0 +1,89 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev12c class="oracle.dbtools.crest.model.design.storage.oracle.v12c.TableProxyOraclev12c" name="CHAT_ROOM" directorySegmentName="seg_0" id="4BD5039C-C2DC-39AA-BE3F-584F531DC7C6">
+<createdBy>jjso0</createdBy>
+<createdTime>2026-10-24 18:50:13 UTC</createdTime>
+<ownerDesignName>campusmarket</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="POST_ID" id="3C024AEE-DA70-706A-43E8-981EBFCF19D8">
+<createdBy>jjso0</createdBy>
+<createdTime>2026-10-24 18:50:13 UTC</createdTime>
+<ownerDesignName>campusmarket</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="LAST_MESSAGE_AT" id="4627BE36-8A66-2AA4-8D6B-3BFD6C7CEB8E">
+<createdBy>jjso0</createdBy>
+<createdTime>2026-10-24 18:50:13 UTC</createdTime>
+<ownerDesignName>campusmarket</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="BUYER_ID" id="77D14D86-678E-361A-2026-C86B0FA77F49">
+<createdBy>jjso0</createdBy>
+<createdTime>2026-10-24 18:50:13 UTC</createdTime>
+<ownerDesignName>campusmarket</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="CHAT_ROOM_ID" id="CE3198BF-B9DC-24F5-849E-06C1C046C864">
+<createdBy>jjso0</createdBy>
+<createdTime>2026-10-24 18:50:13 UTC</createdTime>
+<ownerDesignName>campusmarket</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="CREATED_AT" id="E005C284-ED62-5529-9CDB-A3CA388F041D">
+<createdBy>jjso0</createdBy>
+<createdTime>2026-10-24 18:50:13 UTC</createdTime>
+<ownerDesignName>campusmarket</ownerDesignName>
+<defaultValue>SYSDATE</defaultValue>
+</ColumnProxy>
+<ColumnProxy name="TRADE_ID" id="F2C4222E-95BC-6D2D-BA81-31CD66D53839">
+<createdBy>jjso0</createdBy>
+<createdTime>2026-10-24 18:50:13 UTC</createdTime>
+<ownerDesignName>campusmarket</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="CHAT_ROOM_TRADE_IDX" id="DC07E794-50FA-2EC2-7882-9FEE1CBD32E9">
+<createdBy>jjso0</createdBy>
+<createdTime>2026-10-24 18:50:13 UTC</createdTime>
+<ownerDesignName>campusmarket</ownerDesignName>
+</IndexProxy>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="CHAT_ROOM_BUYER_IDX" id="F459EABE-288F-A7CA-5AAA-9F717DD670AB">
+<createdBy>jjso0</createdBy>
+<createdTime>2026-10-24 18:50:13 UTC</createdTime>
+<ownerDesignName>campusmarket</ownerDesignName>
+</IndexProxy>
+</indexProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="CHAT_ROOM_TRADE_FK" id="E30D5F73-86CC-A4A6-FBD8-76C19B5441EA">
+<createdBy>jjso0</createdBy>
+<createdTime>2026-10-24 18:50:13 UTC</createdTime>
+<ownerDesignName>campusmarket</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="CHAT_ROOM_BUYER_FK" id="ED0C8DA5-982B-23FF-F0F1-A5DC23BDDE1E">
+<createdBy>jjso0</createdBy>
+<createdTime>2026-10-24 18:50:13 UTC</createdTime>
+<ownerDesignName>campusmarket</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="CHAT_ROOM_POST_FK" id="F20DABAB-97F6-0FD4-AB88-79F53B768F42">
+<createdBy>jjso0</createdBy>
+<createdTime>2026-10-24 18:50:13 UTC</createdTime>
+<ownerDesignName>campusmarket</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="CHAT_ROOM_PK" id="AF03A9A0-AFC5-C2B6-4390-2A5F4DDC514B">
+<createdBy>jjso0</createdBy>
+<createdTime>2026-10-24 18:50:13 UTC</createdTime>
+<ownerDesignName>campusmarket</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+<uniqueKeys>
+<UniqueKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.UniqueOraclev10g" name="CHAT_ROOM_BUYER_UK" id="28E9A6E9-AD59-216B-22C4-147AD9CB442D">
+<createdBy>jjso0</createdBy>
+<createdTime>2026-10-24 18:50:13 UTC</createdTime>
+<ownerDesignName>campusmarket</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</UniqueKey>
+</uniqueKeys>
+</TableProxyOraclev12c>

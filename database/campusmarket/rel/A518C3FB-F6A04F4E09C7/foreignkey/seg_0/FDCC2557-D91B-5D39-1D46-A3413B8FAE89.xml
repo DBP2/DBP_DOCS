@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="FDCC2557-D91B-5D39-1D46-A3413B8FAE89" containerWithKeyObject="4BD5039C-C2DC-39AA-BE3F-584F531DC7C6" localFKIndex="F20DABAB-97F6-0FD4-AB88-79F53B768F42" name="CHAT_ROOM_POST_FK">
+<createdBy>jjso0</createdBy>
+<createdTime>2026-10-24 18:23:55 UTC</createdTime>
+<comment><![CDATA[채팅방이 어떤 게시글에 대한 것인지. 게시글 1개에 문의자별로 여러 채팅방 가능]]></comment>
+<generatorID>A2D6EE10-1593-5A67-4C74-AC7934FEA7BB</generatorID>
+<ownerDesignName>campusmarket</ownerDesignName>
+<referredTableLongName>POST</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>4642A701-C60D-B1A7-41FF-323F698AC423</referredTableID>
+<keyObject>BE8FFF61-0A76-9119-C81E-BE1CC1E3305D</keyObject>
+<referredKeyID>BE8FFF61-0A76-9119-C81E-BE1CC1E3305D</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>POST_ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

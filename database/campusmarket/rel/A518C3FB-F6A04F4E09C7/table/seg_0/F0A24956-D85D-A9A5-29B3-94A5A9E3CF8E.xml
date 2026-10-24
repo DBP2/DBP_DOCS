@@ -1,0 +1,65 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="F0A24956-D85D-A9A5-29B3-94A5A9E3CF8E" name="TRADE">
+<createdBy>jjso0</createdBy>
+<createdTime>2026-10-24 18:23:55 UTC</createdTime>
+<generatorID>A498CA0B-7665-C069-7424-9066C7294413</generatorID>
+<ownerDesignName>campusmarket</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="TRADE_ID" id="0BC5ECC9-472B-F3D6-9C01-E59FF27083CC">
+<createdBy>jjso0</createdBy>
+<createdTime>2026-10-24 18:23:55 UTC</createdTime>
+<generatorID>B94F2F7E-B7F4-0AA4-78C1-087915B94183</generatorID>
+<ownerDesignName>campusmarket</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SAFE_ZONE_ID" id="FAF89F94-EAEA-15D9-8852-6D2FDB2BE5DC">
+<createdBy>jjso0</createdBy>
+<createdTime>2026-10-24 18:23:55 UTC</createdTime>
+<generatorID>EE93954D-C80E-8D27-9E74-23D77208161A</generatorID>
+<ownerDesignName>campusmarket</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="97F877B1-6044-F3B9-D32A-71886746026E" referredColumn="CADE850C-AF66-AEC1-15AB-49FF88A4305A"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="5D3F39E7-64FA-88E2-1EE8-78164BC37788" name="TRADE_PK">
+<createdBy>jjso0</createdBy>
+<createdTime>2026-10-24 18:23:55 UTC</createdTime>
+<generatorID>2CFBD3F0-1E72-6737-6540-D99B2A8D4C77</generatorID>
+<ownerDesignName>campusmarket</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0BC5ECC9-472B-F3D6-9C01-E59FF27083CC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7F976200-67D0-AD13-0A6E-5F68E42B74A0" name="TRADE_SAFE_ZONE_FK">
+<createdBy>jjso0</createdBy>
+<createdTime>2026-10-24 18:23:55 UTC</createdTime>
+<generatorID>0DBFEF84-CFE4-EA9C-D19F-E94AB8846841</generatorID>
+<ownerDesignName>campusmarket</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FAF89F94-EAEA-15D9-8852-6D2FDB2BE5DC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

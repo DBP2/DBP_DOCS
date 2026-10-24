@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="77ED45AC-A1C3-39AA-6B26-2392833BDA28" containerWithKeyObject="B4B3A70B-F5C3-BEC9-ADE3-88CCE938E354" localFKIndex="055EAB5D-89B2-30BF-214E-38D3FC286EC7" name="SAFE_ZONE_RECORD_TRADE_FK">
+<createdBy>jjso0</createdBy>
+<createdTime>2026-10-24 18:23:55 UTC</createdTime>
+<comment><![CDATA[거래 1건의 Safe Zone 두고가기·가져가기 기록 (거래당 최대 2건). 기록은 반드시 거래에 속함]]></comment>
+<generatorID>859EF736-ED06-3C41-5986-B93236AFB544</generatorID>
+<ownerDesignName>campusmarket</ownerDesignName>
+<referredTableLongName>TRADE</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>F0A24956-D85D-A9A5-29B3-94A5A9E3CF8E</referredTableID>
+<keyObject>5D3F39E7-64FA-88E2-1EE8-78164BC37788</keyObject>
+<referredKeyID>5D3F39E7-64FA-88E2-1EE8-78164BC37788</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>TRADE_ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

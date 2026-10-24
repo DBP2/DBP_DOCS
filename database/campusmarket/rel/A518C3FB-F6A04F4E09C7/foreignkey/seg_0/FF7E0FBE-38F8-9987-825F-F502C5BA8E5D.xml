@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="FF7E0FBE-38F8-9987-825F-F502C5BA8E5D" containerWithKeyObject="4642A701-C60D-B1A7-41FF-323F698AC423" localFKIndex="CC33987D-31CA-90CD-FC7B-38EC54FDD9B0" name="POST_SAFE_ZONE_FK">
+<createdBy>jjso0</createdBy>
+<createdTime>2026-10-24 18:23:55 UTC</createdTime>
+<comment><![CDATA[게시자가 지정한 Safe Zone 장소. 모든 게시글은 장소 필수]]></comment>
+<generatorID>77D0C772-1BE3-FB27-669C-CEE9891F0D02</generatorID>
+<ownerDesignName>campusmarket</ownerDesignName>
+<referredTableLongName>SAFE_ZONE</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>5F40D2BB-2218-48D8-A33A-E776297F4EAF</referredTableID>
+<keyObject>6216F421-BD5E-5C70-A3CE-86A83B95C7DD</keyObject>
+<referredKeyID>6216F421-BD5E-5C70-A3CE-86A83B95C7DD</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>SAFE_ZONE_ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

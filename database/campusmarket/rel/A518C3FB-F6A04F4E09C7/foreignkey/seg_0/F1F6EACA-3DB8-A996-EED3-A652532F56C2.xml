@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="F1F6EACA-3DB8-A996-EED3-A652532F56C2" containerWithKeyObject="03BD46C3-22EB-706A-2B6D-E969DED8A6CB" localFKIndex="2DF916D2-9FB5-6347-0AD5-386E5174CCE2" name="CHAT_MESSAGE_CHAT_ROOM_FK">
+<createdBy>jjso0</createdBy>
+<createdTime>2026-10-24 18:23:55 UTC</createdTime>
+<comment><![CDATA[채팅방에 속한 메시지 목록. 메시지는 반드시 채팅방에 속함]]></comment>
+<generatorID>ED325404-915C-BD37-76D0-048D27A44022</generatorID>
+<ownerDesignName>campusmarket</ownerDesignName>
+<referredTableLongName>CHAT_ROOM</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>4BD5039C-C2DC-39AA-BE3F-584F531DC7C6</referredTableID>
+<keyObject>AF03A9A0-AFC5-C2B6-4390-2A5F4DDC514B</keyObject>
+<referredKeyID>AF03A9A0-AFC5-C2B6-4390-2A5F4DDC514B</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>CHAT_ROOM_ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

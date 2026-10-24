@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="trade_record" directorySegmentName="seg_0" id="859EF736-ED06-3C41-5986-B93236AFB544">
+<createdBy>jjso0</createdBy>
+<createdTime>2026-10-24 18:06:37 UTC</createdTime>
+<comment><![CDATA[거래 1건의 Safe Zone 두고가기·가져가기 기록 (거래당 최대 2건). 기록은 반드시 거래에 속함]]></comment>
+<ownerDesignName>campusmarket</ownerDesignName>
+<engineerTo>
+<item key="A518C3FB-5317-A641-7DDD-F6A04F4E09C7" value="true"/>
+</engineerTo>
+<sourcePk>2CFBD3F0-1E72-6737-6540-D99B2A8D4C77</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>A498CA0B-7665-C069-7424-9066C7294413</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>C7FD2EDB-F8EE-ADC7-4CB8-8018A11E49B8</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

@@ -1,0 +1,113 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableView class="oracle.dbtools.crest.model.design.relational.TableView" directorySegmentName="seg_0" id="1E5308AD-FA63-D6E6-C313-C7DCA3FD6CFF" name="TRADE_SZ_STATUS_V">
+<createdBy>jjso0</createdBy>
+<createdTime>2026-10-24 18:45:58 UTC</createdTime>
+<ownerDesignName>campusmarket</ownerDesignName>
+<ordsAlias>view_1</ordsAlias>
+<userDefined>true</userDefined>
+<userDefinedSQL><![CDATA[SELECT t.TRADE_ID,
+       t.SAFE_ZONE_ID,
+       MAX(CASE WHEN r.RECORD_ACTION = 'DROP_OFF' THEN r.RECORDED_AT END) AS DROP_OFF_AT,
+       MAX(CASE WHEN r.RECORD_ACTION = 'PICK_UP'  THEN r.RECORDED_AT END) AS PICK_UP_AT,
+       CASE
+         WHEN COUNT(CASE WHEN r.RECORD_ACTION = 'PICK_UP'  THEN 1 END) > 0 THEN 'COMPLETED'
+         WHEN COUNT(CASE WHEN r.RECORD_ACTION = 'DROP_OFF' THEN 1 END) > 0 THEN 'STORED'
+         ELSE 'WAITING'
+       END AS SZ_STATUS
+FROM TRADE t
+LEFT JOIN SAFE_ZONE_RECORD r ON r.TRADE_ID = t.TRADE_ID
+GROUP BY t.TRADE_ID, t.SAFE_ZONE_ID]]></userDefinedSQL>
+<parsed>true</parsed>
+<viewElements>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="TRADE_ID" id="407A589D-5E76-3051-5F4E-5C6AF87444A3">
+<createdBy>jjso0</createdBy>
+<createdTime>2026-10-24 18:46:28 UTC</createdTime>
+<ownerDesignName>campusmarket</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<dataType>NUMBER (10)</dataType>
+<headerAlias>TRADE_ID</headerAlias>
+<reference>false</reference>
+<referencedColumn>0BC5ECC9-472B-F3D6-9C01-E59FF27083CC</referencedColumn>
+<table>F0A24956-D85D-A9A5-29B3-94A5A9E3CF8E</table>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="SAFE_ZONE_ID" id="F3D30108-C1F2-C666-E93C-FBBA0CD421D3">
+<createdBy>jjso0</createdBy>
+<createdTime>2026-10-24 18:46:28 UTC</createdTime>
+<ownerDesignName>campusmarket</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<dataType>NUMBER (10)</dataType>
+<headerAlias>SAFE_ZONE_ID</headerAlias>
+<reference>false</reference>
+<referencedColumn>FAF89F94-EAEA-15D9-8852-6D2FDB2BE5DC</referencedColumn>
+<table>F0A24956-D85D-A9A5-29B3-94A5A9E3CF8E</table>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="DROP_OFF_AT" id="35A46CD0-B974-7286-CF19-59EDD9213006">
+<createdBy>jjso0</createdBy>
+<createdTime>2026-10-24 18:46:28 UTC</createdTime>
+<ownerDesignName>campusmarket</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>DROP_OFF_AT</alias>
+<dataType>UNKNOWN</dataType>
+<headerAlias>DROP_OFF_AT</headerAlias>
+<expression>MAX(CASEWHENr.RECORD_ACTION=&apos;DROP_OFF&apos;THENr.RECORDED_ATEND)</expression>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="PICK_UP_AT" id="5AA9E741-289E-9640-DF0F-71B33649D092">
+<createdBy>jjso0</createdBy>
+<createdTime>2026-10-24 18:46:28 UTC</createdTime>
+<ownerDesignName>campusmarket</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>PICK_UP_AT</alias>
+<dataType>UNKNOWN</dataType>
+<headerAlias>PICK_UP_AT</headerAlias>
+<expression>MAX(CASEWHENr.RECORD_ACTION=&apos;PICK_UP&apos;THENr.RECORDED_ATEND)</expression>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="SZ_STATUS" id="2483F2EF-DA5E-6625-73EE-48CE69867F48">
+<createdBy>jjso0</createdBy>
+<createdTime>2026-10-24 18:46:28 UTC</createdTime>
+<ownerDesignName>campusmarket</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>SZ_STATUS</alias>
+<dataType>UNKNOWN</dataType>
+<headerAlias>SZ_STATUS</headerAlias>
+<expression>CASEWHENCOUNT(CASEWHENr.RECORD_ACTION=&apos;PICK_UP&apos;THEN1END)&gt;0THEN&apos;COMPLETED&apos;WHENCOUNT(CASEWHENr.RECORD_ACTION=&apos;DROP_OFF&apos;THEN1END)&gt;0THEN&apos;STORED&apos;ELSE&apos;WAITING&apos;END</expression>
+<reference>false</reference>
+</viewElement>
+</viewElements>
+<usedObjects>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="F0A24956-D85D-A9A5-29B3-94A5A9E3CF8E">
+<container>true</container>
+<tableName>TRADE</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="B4B3A70B-F5C3-BEC9-ADE3-88CCE938E354">
+<container>true</container>
+<tableName>SAFE_ZONE_RECORD</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="0BC5ECC9-472B-F3D6-9C01-E59FF27083CC">
+<columnName>TRADE_ID</columnName>
+<tableName>TRADE</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="FAF89F94-EAEA-15D9-8852-6D2FDB2BE5DC">
+<columnName>SAFE_ZONE_ID</columnName>
+<tableName>TRADE</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="ACCB3FEB-F635-1F1D-8CA9-7DCAECBE3ABE">
+<columnName>RECORDED_AT</columnName>
+<tableName>SAFE_ZONE_RECORD</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="3055D90A-9F7D-D445-65F2-F0A628F54293">
+<columnName>TRADE_ID</columnName>
+<tableName>SAFE_ZONE_RECORD</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="22E22FDD-0475-90DC-CA7C-F38B645753A1">
+<columnName>RECORD_ACTION</columnName>
+<tableName>SAFE_ZONE_RECORD</tableName>
+</UsedObject>
+</usedObjects>
+</TableView>

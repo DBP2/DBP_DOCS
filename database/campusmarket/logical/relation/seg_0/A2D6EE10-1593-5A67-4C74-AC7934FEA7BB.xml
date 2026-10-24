@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="post_chat_room" directorySegmentName="seg_0" id="A2D6EE10-1593-5A67-4C74-AC7934FEA7BB">
+<createdBy>jjso0</createdBy>
+<createdTime>2026-10-24 18:11:01 UTC</createdTime>
+<comment><![CDATA[채팅방이 어떤 게시글에 대한 것인지. 게시글 1개에 문의자별로 여러 채팅방 가능]]></comment>
+<ownerDesignName>campusmarket</ownerDesignName>
+<engineerTo>
+<item key="A518C3FB-5317-A641-7DDD-F6A04F4E09C7" value="true"/>
+</engineerTo>
+<sourcePk>A0D8A63F-990F-67D9-8C61-29DA0240F50A</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>F047D0D0-817D-C2AD-245B-A97828F14E38</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>236C1AC9-693A-05C9-3F59-7A5B3A1744A5</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

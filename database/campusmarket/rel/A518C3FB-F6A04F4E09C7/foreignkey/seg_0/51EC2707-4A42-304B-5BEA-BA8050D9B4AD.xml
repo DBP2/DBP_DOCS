@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="51EC2707-4A42-304B-5BEA-BA8050D9B4AD" containerWithKeyObject="4BD5039C-C2DC-39AA-BE3F-584F531DC7C6" localFKIndex="E30D5F73-86CC-A4A6-FBD8-76C19B5441EA" name="CHAT_ROOM_TRADE_FK">
+<createdBy>jjso0</createdBy>
+<createdTime>2026-10-24 18:23:55 UTC</createdTime>
+<comment><![CDATA[거래 신청 후 연결되는 거래. 신청 전에는 NULL]]></comment>
+<generatorID>74B563B3-529B-D211-2827-63564025F9A2</generatorID>
+<ownerDesignName>campusmarket</ownerDesignName>
+<referredTableLongName>TRADE</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>F0A24956-D85D-A9A5-29B3-94A5A9E3CF8E</referredTableID>
+<keyObject>5D3F39E7-64FA-88E2-1EE8-78164BC37788</keyObject>
+<referredKeyID>5D3F39E7-64FA-88E2-1EE8-78164BC37788</referredKeyID>
+<mandatory>false</mandatory>
+<refColNames>TRADE_ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

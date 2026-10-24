@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="sender" directorySegmentName="seg_0" id="24ABF716-A69B-3C8C-07EA-89E24B3A0571">
+<createdBy>jjso0</createdBy>
+<createdTime>2026-10-24 18:08:16 UTC</createdTime>
+<comment><![CDATA[메시지를 보낸 회원. 시스템 안내 메시지는 NULL]]></comment>
+<ownerDesignName>campusmarket</ownerDesignName>
+<engineerTo>
+<item key="A518C3FB-5317-A641-7DDD-F6A04F4E09C7" value="true"/>
+</engineerTo>
+<sourcePk>F6988D5F-2AF9-8DC1-99DA-3FD1D15F5331</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>true</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>AB75AB33-72E4-49F0-1707-7011F4E69A42</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>FFB7AC25-8743-BFD1-3183-2E81C802FAF4</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

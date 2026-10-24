@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="396C7CB1-12A0-23E7-5CE0-6B88FD50A257" containerWithKeyObject="4BD5039C-C2DC-39AA-BE3F-584F531DC7C6" localFKIndex="ED0C8DA5-982B-23FF-F0F1-A5DC23BDDE1E" name="CHAT_ROOM_BUYER_FK">
+<createdBy>jjso0</createdBy>
+<createdTime>2026-10-24 18:23:55 UTC</createdTime>
+<comment><![CDATA[채팅을 건 회원 (구매 희망자). 판매자는 게시글 작성자로 확인]]></comment>
+<generatorID>DDFAEE2F-4B2A-9E34-B032-CEF7048B1B14</generatorID>
+<ownerDesignName>campusmarket</ownerDesignName>
+<referredTableLongName>MEMBER</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>6504F184-6D3C-CFF5-059B-846A4589EA7E</referredTableID>
+<keyObject>2EB10552-8B9F-EA11-4ADA-A1D0DB5CBE0B</keyObject>
+<referredKeyID>2EB10552-8B9F-EA11-4ADA-A1D0DB5CBE0B</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>USER_ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

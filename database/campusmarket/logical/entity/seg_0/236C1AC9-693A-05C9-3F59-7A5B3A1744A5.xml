@@ -1,0 +1,119 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="236C1AC9-693A-05C9-3F59-7A5B3A1744A5" name="CHAT_ROOM">
+<createdBy>jjso0</createdBy>
+<createdTime>2026-10-24 17:53:34 UTC</createdTime>
+<comment><![CDATA[게시글 1개에 대한 판매자–문의자 1:1 채팅방. (게시글, 문의자)당 1개]]></comment>
+<ownerDesignName>campusmarket</ownerDesignName>
+<engineerTo>
+<item key="A518C3FB-5317-A641-7DDD-F6A04F4E09C7" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="CHAT_ROOM_ID" id="DE0F9425-E73F-13A2-E483-0FDF994E26E3">
+<createdBy>jjso0</createdBy>
+<createdTime>2026-10-24 17:53:51 UTC</createdTime>
+<ownerDesignName>campusmarket</ownerDesignName>
+<engineerTo>
+<item key="A518C3FB-5317-A641-7DDD-F6A04F4E09C7" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="CREATED_AT" id="FB7C61BA-EA81-9839-806B-2EF4D63778E3">
+<createdBy>jjso0</createdBy>
+<createdTime>2026-10-24 17:54:10 UTC</createdTime>
+<ownerDesignName>campusmarket</ownerDesignName>
+<engineerTo>
+<item key="A518C3FB-5317-A641-7DDD-F6A04F4E09C7" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<defaultValue>SYSDATE</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="LAST_MESSAGE_AT" id="D3ECA677-48FC-ACEA-395E-2C41344EA8E1">
+<createdBy>jjso0</createdBy>
+<createdTime>2026-10-24 17:54:38 UTC</createdTime>
+<ownerDesignName>campusmarket</ownerDesignName>
+<engineerTo>
+<item key="A518C3FB-5317-A641-7DDD-F6A04F4E09C7" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="USER_ID" id="1EF1DC17-1A49-229C-20A5-65078D284124">
+<createdBy>jjso0</createdBy>
+<createdTime>2026-10-24 18:07:36 UTC</createdTime>
+<generatorID>DDFAEE2F-4B2A-9E34-B032-CEF7048B1B14</generatorID>
+<ownerDesignName>campusmarket</ownerDesignName>
+<engineerTo>
+<item key="A518C3FB-5317-A641-7DDD-F6A04F4E09C7" value="true"/>
+</engineerTo>
+<referedAttribute>6677A75E-C576-0059-2DDC-0AA25B2F8F6B</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="TRADE_ID" id="B5A68BCA-ABCB-BB9E-F623-403EFBBB8A50">
+<createdBy>jjso0</createdBy>
+<createdTime>2026-10-24 18:07:51 UTC</createdTime>
+<generatorID>74B563B3-529B-D211-2827-63564025F9A2</generatorID>
+<ownerDesignName>campusmarket</ownerDesignName>
+<engineerTo>
+<item key="A518C3FB-5317-A641-7DDD-F6A04F4E09C7" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>B94F2F7E-B7F4-0AA4-78C1-087915B94183</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="POST_ID" id="F88BAB7C-C386-F511-CAC9-17284C8AF6A0">
+<createdBy>jjso0</createdBy>
+<createdTime>2026-10-24 18:11:01 UTC</createdTime>
+<generatorID>A2D6EE10-1593-5A67-4C74-AC7934FEA7BB</generatorID>
+<ownerDesignName>campusmarket</ownerDesignName>
+<engineerTo>
+<item key="A518C3FB-5317-A641-7DDD-F6A04F4E09C7" value="true"/>
+</engineerTo>
+<referedAttribute>65EB2E7D-FB1D-714E-B104-CB3E96B6A26E</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="AB0D9B04-DD58-9EE4-A3F7-124CF3504319" name="CHAT_ROOM PK">
+<createdBy>jjso0</createdBy>
+<createdTime>2026-10-24 17:54:08 UTC</createdTime>
+<ownerDesignName>campusmarket</ownerDesignName>
+<engineerTo>
+<item key="A518C3FB-5317-A641-7DDD-F6A04F4E09C7" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>DE0F9425-E73F-13A2-E483-0FDF994E26E3</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>
