@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" directorySegmentName="seg_0" id="A7922FA0-7C9A-424B-93C6-E5CF1905994B" name="post_category_fk">
+  <createdBy>modeling</createdBy>
+  <createdTime>2026-10-26 08:00:00 UTC</createdTime>
+  <ownerDesignName>campusmarket</ownerDesignName>
+  <engineerTo>
+    <item key="A518C3FB-F6A04F4E09C7" value="true"/>
+  </engineerTo>
+  <sourcePk>ADAEEDA1-EEFD-4D0A-BC29-C3CD6FA841C2</sourcePk>
+  <identifying>false</identifying>
+  <optionalSource>true</optionalSource>
+  <optionalTarget>false</optionalTarget>
+  <sourceCardinality>1</sourceCardinality>
+  <sourceEntity>BA89706B-C4AC-47FB-B909-1863E6F81B42</sourceEntity>
+  <targetCardinalityString>*</targetCardinalityString>
+  <targetEntity>F047D0D0-817D-C2AD-245B-A97828F14E38</targetEntity>
+  <transferable>true</transferable>
+  <deleteRule>NO ACTION</deleteRule>
+</Relation>

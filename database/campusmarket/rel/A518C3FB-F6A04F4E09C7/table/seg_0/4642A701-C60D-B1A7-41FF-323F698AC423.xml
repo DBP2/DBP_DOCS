@@ -36,6 +36,165 @@
 <colAssociation fkAssociation="FF7E0FBE-38F8-9987-825F-F502C5BA8E5D" referredColumn="CADE850C-AF66-AEC1-15AB-49FF88A4305A"/>
 </associations>
 </Column>
+<Column name="WRITER_ID" id="1BD34AD8-7981-494D-ADEC-7FFE9AD16A80">
+<createdBy>modeling</createdBy>
+<createdTime>2026-10-26 08:00:00 UTC</createdTime>
+<generatorID>AFDA0BE3-78E5-4C72-A2EC-DB9A8F576436</generatorID>
+<ownerDesignName>campusmarket</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="95029F37-E1B9-405D-8DA9-58CBE067351A" referredColumn="4224126A-9740-85BC-5D48-2ECC0B0627AE"/>
+</associations>
+</Column>
+<Column name="CATEGORY_ID" id="C8299459-F115-4390-AFFF-03953953078D">
+<createdBy>modeling</createdBy>
+<createdTime>2026-10-26 08:00:00 UTC</createdTime>
+<generatorID>52B21D58-F527-4E3A-AC7C-6023E1833851</generatorID>
+<ownerDesignName>campusmarket</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="ED1CB769-3EC7-44A0-8A7D-96B48C353CA6" referredColumn="619DBA22-AE8A-449D-A86F-464124271762"/>
+</associations>
+</Column>
+<Column name="TITLE" id="B41F0A5E-B2C9-4030-96EC-65623CC97A9D">
+<createdBy>modeling</createdBy>
+<createdTime>2026-10-26 08:00:00 UTC</createdTime>
+<generatorID>21DF5253-6405-4011-A006-AFEA1279BDE2</generatorID>
+<ownerDesignName>campusmarket</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>200</dataTypeSize>
+<ownDataTypeParameters>200,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SUBJECT" id="C2C647FA-304F-45D4-BA4C-17507F65134D">
+<createdBy>modeling</createdBy>
+<createdTime>2026-10-26 08:00:00 UTC</createdTime>
+<generatorID>A5CD7573-C876-436B-AE79-614A1DC900E5</generatorID>
+<ownerDesignName>campusmarket</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DESCRIPTION" id="2463C972-CB25-4E7F-9A7D-8C4B2A6046D5">
+<createdBy>modeling</createdBy>
+<createdTime>2026-10-26 08:00:00 UTC</createdTime>
+<generatorID>96E2D738-162C-4C74-BFE9-4DE722A30ED8</generatorID>
+<ownerDesignName>campusmarket</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4000</dataTypeSize>
+<ownDataTypeParameters>4000,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PRICE" id="AFAFAC39-5F8E-474A-8A9B-633C3B6DF2F3">
+<createdBy>modeling</createdBy>
+<createdTime>2026-10-26 08:00:00 UTC</createdTime>
+<generatorID>BC452FED-C664-476B-91D2-B4A58F01B1AF</generatorID>
+<ownerDesignName>campusmarket</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="AVAILABLE" id="9E9950A5-5FA5-45AA-A66D-2B79DE77A35B">
+<createdBy>modeling</createdBy>
+<createdTime>2026-10-26 08:00:00 UTC</createdTime>
+<generatorID>20CCC290-F56F-4FC1-A30D-7B6B0DED5900</generatorID>
+<ownerDesignName>campusmarket</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="AVAILABLE_TIME" id="42C31623-292C-4CBE-A404-6B0D8FFFAA7E">
+<createdBy>modeling</createdBy>
+<createdTime>2026-10-26 08:00:00 UTC</createdTime>
+<generatorID>37B06037-A414-445E-B499-2722A4EB5F7E</generatorID>
+<ownerDesignName>campusmarket</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="STATUS" id="A8C0DA47-FBDA-43E7-B729-2217ED46FBE0">
+<createdBy>modeling</createdBy>
+<createdTime>2026-10-26 08:00:00 UTC</createdTime>
+<generatorID>881B597C-99ED-48A2-9406-C7914EEB3251</generatorID>
+<ownerDesignName>campusmarket</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="VIEW_COUNT" id="228A6130-0C29-437E-909F-8544431840E0">
+<createdBy>modeling</createdBy>
+<createdTime>2026-10-26 08:00:00 UTC</createdTime>
+<generatorID>90A23AF3-DAAB-49D5-8D7F-9AB5001D8D80</generatorID>
+<ownerDesignName>campusmarket</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FAVORITE_COUNT" id="FE648E01-3ED1-4504-9CE8-A2996E79BD53">
+<createdBy>modeling</createdBy>
+<createdTime>2026-10-26 08:00:00 UTC</createdTime>
+<generatorID>057D3A3D-39BB-4141-BAFB-69ADA1BA221B</generatorID>
+<ownerDesignName>campusmarket</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CREATED_AT" id="705E4AE0-EBF8-4445-8FF1-9D03F5E18346">
+<createdBy>modeling</createdBy>
+<createdTime>2026-10-26 08:00:00 UTC</createdTime>
+<generatorID>86DE9BAC-F93D-4CC3-9E75-3C38829D78B1</generatorID>
+<ownerDesignName>campusmarket</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
 <ind_PK_UK id="BE8FFF61-0A76-9119-C81E-BE1CC1E3305D" name="POST_PK">
@@ -59,6 +218,28 @@
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="2E440E79-DD54-AD12-5B67-CE38B777FF28"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="EA9121CD-FBA8-4C4C-841D-73468D7FB3EA" name="POST_CATEGORY_FK">
+<createdBy>modeling</createdBy>
+<createdTime>2026-10-26 08:00:00 UTC</createdTime>
+<generatorID>A7922FA0-7C9A-424B-93C6-E5CF1905994B</generatorID>
+<ownerDesignName>campusmarket</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C8299459-F115-4390-AFFF-03953953078D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A5A2CB92-1DAC-463F-BBBE-E980E2F97C88" name="POST_WRITER_FK">
+<createdBy>modeling</createdBy>
+<createdTime>2026-10-26 08:00:00 UTC</createdTime>
+<generatorID>C92AEDA0-8AC5-493C-B61D-1A80F1F233E9</generatorID>
+<ownerDesignName>campusmarket</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1BD34AD8-7981-494D-ADEC-7FFE9AD16A80"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

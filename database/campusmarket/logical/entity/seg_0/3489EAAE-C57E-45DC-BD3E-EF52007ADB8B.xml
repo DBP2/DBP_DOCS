@@ -1,0 +1,163 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="3489EAAE-C57E-45DC-BD3E-EF52007ADB8B" name="STUDENT">
+<createdBy>lyw</createdBy>
+<createdTime>2026-10-26 12:00:00 UTC</createdTime>
+<comment><![CDATA[더미 학적 데이터. 가입 요청의 학교·학번·이름을 대조해 재학생만 가입 허용 (조회 전용)]]></comment>
+<ownerDesignName>campusmarket</ownerDesignName>
+<engineerTo>
+<item key="A518C3FB-5317-A641-7DDD-F6A04F4E09C7" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="STUDENT_ID" id="9C3D5FBF-1591-4186-9BAC-EEEB02BED95B">
+<createdBy>lyw</createdBy>
+<createdTime>2026-10-26 12:00:00 UTC</createdTime>
+<comment><![CDATA[학적 번호 (PK, STUDENT_SEQ)]]></comment>
+<ownerDesignName>campusmarket</ownerDesignName>
+<engineerTo>
+<item key="A518C3FB-5317-A641-7DDD-F6A04F4E09C7" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="STUDENT_NO" id="366AD173-1F9A-4ADF-AFC9-EA8B25DE5C21">
+<createdBy>lyw</createdBy>
+<createdTime>2026-10-26 12:00:00 UTC</createdTime>
+<comment><![CDATA[학번. 같은 학교 안에서만 유일]]></comment>
+<ownerDesignName>campusmarket</ownerDesignName>
+<engineerTo>
+<item key="A518C3FB-5317-A641-7DDD-F6A04F4E09C7" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="STUDENT_NAME" id="C9AA1F70-1551-44F5-9164-67B020AC7EAB">
+<createdBy>lyw</createdBy>
+<createdTime>2026-10-26 12:00:00 UTC</createdTime>
+<comment><![CDATA[학생 이름. 가입 시 입력한 이름과 대조]]></comment>
+<ownerDesignName>campusmarket</ownerDesignName>
+<engineerTo>
+<item key="A518C3FB-5317-A641-7DDD-F6A04F4E09C7" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DEPARTMENT" id="B74B61C4-94B5-47B0-BA23-9384AF02E8E9">
+<createdBy>lyw</createdBy>
+<createdTime>2026-10-26 12:00:00 UTC</createdTime>
+<comment><![CDATA[학과]]></comment>
+<ownerDesignName>campusmarket</ownerDesignName>
+<engineerTo>
+<item key="A518C3FB-5317-A641-7DDD-F6A04F4E09C7" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="EMAIL" id="F665482C-AEA7-4140-B861-94848A6206E3">
+<createdBy>lyw</createdBy>
+<createdTime>2026-10-26 12:00:00 UTC</createdTime>
+<comment><![CDATA[학교 웹메일 주소]]></comment>
+<ownerDesignName>campusmarket</ownerDesignName>
+<engineerTo>
+<item key="A518C3FB-5317-A641-7DDD-F6A04F4E09C7" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ENROLL_STATUS" id="32ED3A6D-BD98-43DD-9044-D54D9CF1BE3B">
+<createdBy>lyw</createdBy>
+<createdTime>2026-10-26 12:00:00 UTC</createdTime>
+<comment><![CDATA[학적 상태. ENROLLED(재학)만 가입 가능]]></comment>
+<ownerDesignName>campusmarket</ownerDesignName>
+<engineerTo>
+<item key="A518C3FB-5317-A641-7DDD-F6A04F4E09C7" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<listOfValues>
+<valueDef value="ENROLLED" description="재학"/>
+<valueDef value="LEAVE" description="휴학"/>
+<valueDef value="GRADUATED" description="졸업"/>
+</listOfValues>
+<defaultValue>ENROLLED</defaultValue>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="SCHOOL_ID" id="CDB7E0C8-E6D2-47C8-A352-4590A7C40EBB">
+<createdBy>lyw</createdBy>
+<createdTime>2026-10-26 12:00:00 UTC</createdTime>
+<comment><![CDATA[소속 학교 (FK → SCHOOL)]]></comment>
+<generatorID>636AEF20-E60A-4F12-8A75-8E622AC973E7</generatorID>
+<ownerDesignName>campusmarket</ownerDesignName>
+<engineerTo>
+<item key="A518C3FB-5317-A641-7DDD-F6A04F4E09C7" value="true"/>
+</engineerTo>
+<referedAttribute>03AAD501-A2D5-450D-9A71-74CE5A8E52E7</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="2A105C34-BD00-41EF-84A0-87F8A6B0F3FA" name="STUDENT PK">
+<createdBy>lyw</createdBy>
+<createdTime>2026-10-26 12:00:00 UTC</createdTime>
+<ownerDesignName>campusmarket</ownerDesignName>
+<engineerTo>
+<item key="A518C3FB-5317-A641-7DDD-F6A04F4E09C7" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>9C3D5FBF-1591-4186-9BAC-EEEB02BED95B</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="C98CF52F-DF80-40AA-83A8-E11F3316E185" name="STUDENT_SCHOOL_NO_UK">
+<createdBy>lyw</createdBy>
+<createdTime>2026-10-26 12:00:00 UTC</createdTime>
+<ownerDesignName>campusmarket</ownerDesignName>
+<engineerTo>
+<item key="A518C3FB-5317-A641-7DDD-F6A04F4E09C7" value="true"/>
+</engineerTo>
+<usedAttributes>
+<attributeRef>CDB7E0C8-E6D2-47C8-A352-4590A7C40EBB</attributeRef>
+<attributeRef>366AD173-1F9A-4ADF-AFC9-EA8B25DE5C21</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="7E06FAAF-28B0-4254-8453-383A2ED0E9CB" name="STUDENT_EMAIL_UK">
+<createdBy>lyw</createdBy>
+<createdTime>2026-10-26 12:00:00 UTC</createdTime>
+<ownerDesignName>campusmarket</ownerDesignName>
+<engineerTo>
+<item key="A518C3FB-5317-A641-7DDD-F6A04F4E09C7" value="true"/>
+</engineerTo>
+<usedAttributes>
+<attributeRef>F665482C-AEA7-4140-B861-94848A6206E3</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

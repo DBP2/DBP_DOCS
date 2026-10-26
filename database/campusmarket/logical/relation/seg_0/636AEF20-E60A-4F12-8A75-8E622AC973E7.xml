@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="school_student" directorySegmentName="seg_0" id="636AEF20-E60A-4F12-8A75-8E622AC973E7">
+<createdBy>lyw</createdBy>
+<createdTime>2026-10-26 12:00:00 UTC</createdTime>
+<comment><![CDATA[학교 1곳에 학생(학적) 여러 명. 학적은 반드시 학교에 속함]]></comment>
+<ownerDesignName>campusmarket</ownerDesignName>
+<engineerTo>
+<item key="A518C3FB-5317-A641-7DDD-F6A04F4E09C7" value="true"/>
+</engineerTo>
+<sourcePk>CD73C666-3059-4232-9832-D22189EC3448</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>09DE6D46-231E-4D30-B123-16FA61BFC49B</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>3489EAAE-C57E-45DC-BD3E-EF52007ADB8B</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

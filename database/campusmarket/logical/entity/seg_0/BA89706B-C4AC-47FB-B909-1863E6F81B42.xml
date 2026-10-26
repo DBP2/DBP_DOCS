@@ -1,0 +1,91 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="BA89706B-C4AC-47FB-B909-1863E6F81B42" name="CATEGORY">
+  <createdBy>modeling</createdBy>
+  <createdTime>2026-10-26 08:00:00 UTC</createdTime>
+  <ownerDesignName>campusmarket</ownerDesignName>
+  <engineerTo>
+    <item key="A518C3FB-F6A04F4E09C7" value="true"/>
+  </engineerTo>
+  <fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+  <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+    <Attribute name="CATEGORY_ID" id="2AC11EC7-1D83-42A6-ABAB-DCAB3504673F">
+      <createdBy>modeling</createdBy>
+      <createdTime>2026-10-26 08:00:00 UTC</createdTime>
+      <ownerDesignName>campusmarket</ownerDesignName>
+      <engineerTo>
+        <item key="A518C3FB-F6A04F4E09C7" value="true"/>
+      </engineerTo>
+      <useDomainConstraints>false</useDomainConstraints>
+      <use>1</use>
+      <logicalDatatype>LOGDT019</logicalDatatype>
+      <dataTypePrecision>10</dataTypePrecision>
+      <ownDataTypeParameters>,10,</ownDataTypeParameters>
+    </Attribute>
+    <Attribute name="NAME" id="052DEEBE-4B56-45C5-B512-52A0E785C50A">
+      <createdBy>modeling</createdBy>
+      <createdTime>2026-10-26 08:00:00 UTC</createdTime>
+      <ownerDesignName>campusmarket</ownerDesignName>
+      <engineerTo>
+        <item key="A518C3FB-F6A04F4E09C7" value="true"/>
+      </engineerTo>
+      <useDomainConstraints>false</useDomainConstraints>
+      <use>1</use>
+      <logicalDatatype>LOGDT024</logicalDatatype>
+      <dataTypeSize>100</dataTypeSize>
+      <ownDataTypeParameters>,,</ownDataTypeParameters>
+    </Attribute>
+    <Attribute name="COLLEGE" id="2F4EA2EF-E4A9-4058-B652-78878BC8D43A">
+      <createdBy>modeling</createdBy>
+      <createdTime>2026-10-26 08:00:00 UTC</createdTime>
+      <ownerDesignName>campusmarket</ownerDesignName>
+      <engineerTo>
+        <item key="A518C3FB-F6A04F4E09C7" value="true"/>
+      </engineerTo>
+      <useDomainConstraints>false</useDomainConstraints>
+      <use>1</use>
+      <logicalDatatype>LOGDT024</logicalDatatype>
+      <dataTypeSize>100</dataTypeSize>
+      <ownDataTypeParameters>,,</ownDataTypeParameters>
+    </Attribute>
+    <Attribute name="GRADE" id="F8454355-82DC-4D13-969C-497D3253A2C5">
+      <createdBy>modeling</createdBy>
+      <createdTime>2026-10-26 08:00:00 UTC</createdTime>
+      <ownerDesignName>campusmarket</ownerDesignName>
+      <engineerTo>
+        <item key="A518C3FB-F6A04F4E09C7" value="true"/>
+      </engineerTo>
+      <useDomainConstraints>false</useDomainConstraints>
+      <use>1</use>
+      <logicalDatatype>LOGDT019</logicalDatatype>
+      <dataTypePrecision>2</dataTypePrecision>
+      <ownDataTypeParameters>,2,</ownDataTypeParameters>
+    </Attribute>
+    <Attribute name="CLASSIFICATION" id="F68758B7-A1EB-4102-B5E6-4BE345FD6F75">
+      <createdBy>modeling</createdBy>
+      <createdTime>2026-10-26 08:00:00 UTC</createdTime>
+      <ownerDesignName>campusmarket</ownerDesignName>
+      <engineerTo>
+        <item key="A518C3FB-F6A04F4E09C7" value="true"/>
+      </engineerTo>
+      <useDomainConstraints>false</useDomainConstraints>
+      <use>1</use>
+      <logicalDatatype>LOGDT024</logicalDatatype>
+      <dataTypeSize>50</dataTypeSize>
+      <ownDataTypeParameters>,,</ownDataTypeParameters>
+    </Attribute>
+  </attributes>
+  <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+    <identifier id="ADAEEDA1-EEFD-4D0A-BC29-C3CD6FA841C2" name="CATEGORY PK">
+      <createdBy>modeling</createdBy>
+      <createdTime>2026-10-26 08:00:00 UTC</createdTime>
+      <ownerDesignName>campusmarket</ownerDesignName>
+      <engineerTo>
+        <item key="A518C3FB-F6A04F4E09C7" value="true"/>
+      </engineerTo>
+      <pk>true</pk>
+      <usedAttributes>
+        <attributeRef>2AC11EC7-1D83-42A6-ABAB-DCAB3504673F</attributeRef>
+      </usedAttributes>
+    </identifier>
+  </identifiers>
+</Entity>

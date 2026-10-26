@@ -1,61 +1,220 @@
-<?xml version = '1.0' encoding = 'UTF-8'?>
+<?xml version='1.0' encoding='UTF-8'?>
 <Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="F047D0D0-817D-C2AD-245B-A97828F14E38" name="POST">
-<createdBy>jjso0</createdBy>
-<createdTime>2026-10-24 17:58:34 UTC</createdTime>
-<ownerDesignName>campusmarket</ownerDesignName>
-<engineerTo>
-<item key="A518C3FB-5317-A641-7DDD-F6A04F4E09C7" value="true"/>
-</engineerTo>
-<adequatelyNormalized>NO</adequatelyNormalized>
-<expectedVolumes>0</expectedVolumes>
-<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
-<growthPercent>0</growthPercent>
-<growthType>Year</growthType>
-<maxVolumes>9999999</maxVolumes>
-<minVolumes>0</minVolumes>
-<normalForm>Third</normalForm>
-<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
-<Attribute name="POST_ID" id="65EB2E7D-FB1D-714E-B104-CB3E96B6A26E">
-<createdBy>jjso0</createdBy>
-<createdTime>2026-10-24 17:58:45 UTC</createdTime>
-<ownerDesignName>campusmarket</ownerDesignName>
-<engineerTo>
-<item key="A518C3FB-5317-A641-7DDD-F6A04F4E09C7" value="true"/>
-</engineerTo>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>10</dataTypePrecision>
-<ownDataTypeParameters>,10,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="SAFE_ZONE_ID" id="044B4F53-C73C-AD7A-977A-4DE22BF1D6B3">
-<createdBy>jjso0</createdBy>
-<createdTime>2026-10-24 18:08:26 UTC</createdTime>
-<generatorID>77D0C772-1BE3-FB27-669C-CEE9891F0D02</generatorID>
-<ownerDesignName>campusmarket</ownerDesignName>
-<engineerTo>
-<item key="A518C3FB-5317-A641-7DDD-F6A04F4E09C7" value="true"/>
-</engineerTo>
-<referedAttribute>535EDCBF-7FC5-7358-07CD-4DC6B3CCEEA5</referedAttribute>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>10</dataTypePrecision>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-</Attribute>
-</attributes>
-<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
-<identifier id="A0D8A63F-990F-67D9-8C61-29DA0240F50A" name="POST PK">
-<createdBy>jjso0</createdBy>
-<createdTime>2026-10-24 17:59:00 UTC</createdTime>
-<ownerDesignName>campusmarket</ownerDesignName>
-<engineerTo>
-<item key="A518C3FB-5317-A641-7DDD-F6A04F4E09C7" value="true"/>
-</engineerTo>
-<pk>true</pk>
-<usedAttributes>
-<attributeRef>65EB2E7D-FB1D-714E-B104-CB3E96B6A26E</attributeRef>
-</usedAttributes>
-</identifier>
-</identifiers>
+  <createdBy>jjso0</createdBy>
+  <createdTime>2026-10-24 17:58:34 UTC</createdTime>
+  <ownerDesignName>campusmarket</ownerDesignName>
+  <engineerTo>
+    <item key="A518C3FB-5317-A641-7DDD-F6A04F4E09C7" value="true" />
+  </engineerTo>
+  <adequatelyNormalized>NO</adequatelyNormalized>
+  <expectedVolumes>0</expectedVolumes>
+  <fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+  <growthPercent>0</growthPercent>
+  <growthType>Year</growthType>
+  <maxVolumes>9999999</maxVolumes>
+  <minVolumes>0</minVolumes>
+  <normalForm>Third</normalForm>
+  <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+    <Attribute name="POST_ID" id="65EB2E7D-FB1D-714E-B104-CB3E96B6A26E">
+      <createdBy>jjso0</createdBy>
+      <createdTime>2026-10-24 17:58:45 UTC</createdTime>
+      <ownerDesignName>campusmarket</ownerDesignName>
+      <engineerTo>
+        <item key="A518C3FB-5317-A641-7DDD-F6A04F4E09C7" value="true" />
+      </engineerTo>
+      <useDomainConstraints>false</useDomainConstraints>
+      <use>1</use>
+      <logicalDatatype>LOGDT019</logicalDatatype>
+      <dataTypePrecision>10</dataTypePrecision>
+      <ownDataTypeParameters>,10,</ownDataTypeParameters>
+    </Attribute>
+    <Attribute name="SAFE_ZONE_ID" id="044B4F53-C73C-AD7A-977A-4DE22BF1D6B3">
+      <createdBy>jjso0</createdBy>
+      <createdTime>2026-10-24 18:08:26 UTC</createdTime>
+      <generatorID>77D0C772-1BE3-FB27-669C-CEE9891F0D02</generatorID>
+      <ownerDesignName>campusmarket</ownerDesignName>
+      <engineerTo>
+        <item key="A518C3FB-5317-A641-7DDD-F6A04F4E09C7" value="true" />
+      </engineerTo>
+      <referedAttribute>535EDCBF-7FC5-7358-07CD-4DC6B3CCEEA5</referedAttribute>
+      <useDomainConstraints>false</useDomainConstraints>
+      <use>1</use>
+      <logicalDatatype>LOGDT019</logicalDatatype>
+      <dataTypePrecision>10</dataTypePrecision>
+      <ownDataTypeParameters>,,</ownDataTypeParameters>
+    </Attribute>
+    <Attribute name="WRITER_ID" id="AFDA0BE3-78E5-4C72-A2EC-DB9A8F576436">
+      <createdBy>modeling</createdBy>
+      <createdTime>2026-10-26 08:00:00 UTC</createdTime>
+      <ownerDesignName>campusmarket</ownerDesignName>
+      <engineerTo>
+        <item key="A518C3FB-F6A04F4E09C7" value="true" />
+      </engineerTo>
+      <useDomainConstraints>false</useDomainConstraints>
+      <use>1</use>
+      <logicalDatatype>LOGDT024</logicalDatatype>
+      <dataTypeSize>20</dataTypeSize>
+      <ownDataTypeParameters>,,</ownDataTypeParameters>
+      <generatorID>C92AEDA0-8AC5-493C-B61D-1A80F1F233E9</generatorID>
+      <referedAttribute>6677A75E-C576-0059-2DDC-0AA25B2F8F6B</referedAttribute>
+    </Attribute>
+    <Attribute name="CATEGORY_ID" id="52B21D58-F527-4E3A-AC7C-6023E1833851">
+      <createdBy>modeling</createdBy>
+      <createdTime>2026-10-26 08:00:00 UTC</createdTime>
+      <ownerDesignName>campusmarket</ownerDesignName>
+      <engineerTo>
+        <item key="A518C3FB-F6A04F4E09C7" value="true" />
+      </engineerTo>
+      <useDomainConstraints>false</useDomainConstraints>
+      <use>1</use>
+      <logicalDatatype>LOGDT019</logicalDatatype>
+      <dataTypePrecision>10</dataTypePrecision>
+      <ownDataTypeParameters>,10,</ownDataTypeParameters>
+      <generatorID>A7922FA0-7C9A-424B-93C6-E5CF1905994B</generatorID>
+      <referedAttribute>2AC11EC7-1D83-42A6-ABAB-DCAB3504673F</referedAttribute>
+    </Attribute>
+    <Attribute name="TITLE" id="21DF5253-6405-4011-A006-AFEA1279BDE2">
+      <createdBy>modeling</createdBy>
+      <createdTime>2026-10-26 08:00:00 UTC</createdTime>
+      <ownerDesignName>campusmarket</ownerDesignName>
+      <engineerTo>
+        <item key="A518C3FB-F6A04F4E09C7" value="true" />
+      </engineerTo>
+      <useDomainConstraints>false</useDomainConstraints>
+      <use>1</use>
+      <logicalDatatype>LOGDT024</logicalDatatype>
+      <dataTypeSize>200</dataTypeSize>
+      <ownDataTypeParameters>,,</ownDataTypeParameters>
+    </Attribute>
+    <Attribute name="SUBJECT" id="A5CD7573-C876-436B-AE79-614A1DC900E5">
+      <createdBy>modeling</createdBy>
+      <createdTime>2026-10-26 08:00:00 UTC</createdTime>
+      <ownerDesignName>campusmarket</ownerDesignName>
+      <engineerTo>
+        <item key="A518C3FB-F6A04F4E09C7" value="true" />
+      </engineerTo>
+      <useDomainConstraints>false</useDomainConstraints>
+      <use>1</use>
+      <logicalDatatype>LOGDT024</logicalDatatype>
+      <dataTypeSize>100</dataTypeSize>
+      <ownDataTypeParameters>,,</ownDataTypeParameters>
+    </Attribute>
+    <Attribute name="DESCRIPTION" id="96E2D738-162C-4C74-BFE9-4DE722A30ED8">
+      <createdBy>modeling</createdBy>
+      <createdTime>2026-10-26 08:00:00 UTC</createdTime>
+      <ownerDesignName>campusmarket</ownerDesignName>
+      <engineerTo>
+        <item key="A518C3FB-F6A04F4E09C7" value="true" />
+      </engineerTo>
+      <useDomainConstraints>false</useDomainConstraints>
+      <use>1</use>
+      <logicalDatatype>LOGDT024</logicalDatatype>
+      <dataTypeSize>4000</dataTypeSize>
+      <ownDataTypeParameters>,,</ownDataTypeParameters>
+    </Attribute>
+    <Attribute name="PRICE" id="BC452FED-C664-476B-91D2-B4A58F01B1AF">
+      <createdBy>modeling</createdBy>
+      <createdTime>2026-10-26 08:00:00 UTC</createdTime>
+      <ownerDesignName>campusmarket</ownerDesignName>
+      <engineerTo>
+        <item key="A518C3FB-F6A04F4E09C7" value="true" />
+      </engineerTo>
+      <useDomainConstraints>false</useDomainConstraints>
+      <use>1</use>
+      <logicalDatatype>LOGDT019</logicalDatatype>
+      <dataTypePrecision>10</dataTypePrecision>
+      <ownDataTypeParameters>,10,</ownDataTypeParameters>
+    </Attribute>
+    <Attribute name="AVAILABLE" id="20CCC290-F56F-4FC1-A30D-7B6B0DED5900">
+      <createdBy>modeling</createdBy>
+      <createdTime>2026-10-26 08:00:00 UTC</createdTime>
+      <ownerDesignName>campusmarket</ownerDesignName>
+      <engineerTo>
+        <item key="A518C3FB-F6A04F4E09C7" value="true" />
+      </engineerTo>
+      <useDomainConstraints>false</useDomainConstraints>
+      <use>1</use>
+      <logicalDatatype>LOGDT022</logicalDatatype>
+      <dataTypeSize>1</dataTypeSize>
+      <ownDataTypeParameters>,,</ownDataTypeParameters>
+    </Attribute>
+    <Attribute name="AVAILABLE_TIME" id="37B06037-A414-445E-B499-2722A4EB5F7E">
+      <createdBy>modeling</createdBy>
+      <createdTime>2026-10-26 08:00:00 UTC</createdTime>
+      <ownerDesignName>campusmarket</ownerDesignName>
+      <engineerTo>
+        <item key="A518C3FB-F6A04F4E09C7" value="true" />
+      </engineerTo>
+      <useDomainConstraints>false</useDomainConstraints>
+      <use>1</use>
+      <logicalDatatype>LOGDT024</logicalDatatype>
+      <dataTypeSize>100</dataTypeSize>
+      <ownDataTypeParameters>,,</ownDataTypeParameters>
+    </Attribute>
+    <Attribute name="STATUS" id="881B597C-99ED-48A2-9406-C7914EEB3251">
+      <createdBy>modeling</createdBy>
+      <createdTime>2026-10-26 08:00:00 UTC</createdTime>
+      <ownerDesignName>campusmarket</ownerDesignName>
+      <engineerTo>
+        <item key="A518C3FB-F6A04F4E09C7" value="true" />
+      </engineerTo>
+      <useDomainConstraints>false</useDomainConstraints>
+      <use>1</use>
+      <logicalDatatype>LOGDT024</logicalDatatype>
+      <dataTypeSize>30</dataTypeSize>
+      <ownDataTypeParameters>,,</ownDataTypeParameters>
+    </Attribute>
+    <Attribute name="VIEW_COUNT" id="90A23AF3-DAAB-49D5-8D7F-9AB5001D8D80">
+      <createdBy>modeling</createdBy>
+      <createdTime>2026-10-26 08:00:00 UTC</createdTime>
+      <ownerDesignName>campusmarket</ownerDesignName>
+      <engineerTo>
+        <item key="A518C3FB-F6A04F4E09C7" value="true" />
+      </engineerTo>
+      <useDomainConstraints>false</useDomainConstraints>
+      <use>1</use>
+      <logicalDatatype>LOGDT019</logicalDatatype>
+      <dataTypePrecision>10</dataTypePrecision>
+      <ownDataTypeParameters>,10,</ownDataTypeParameters>
+    </Attribute>
+    <Attribute name="FAVORITE_COUNT" id="057D3A3D-39BB-4141-BAFB-69ADA1BA221B">
+      <createdBy>modeling</createdBy>
+      <createdTime>2026-10-26 08:00:00 UTC</createdTime>
+      <ownerDesignName>campusmarket</ownerDesignName>
+      <engineerTo>
+        <item key="A518C3FB-F6A04F4E09C7" value="true" />
+      </engineerTo>
+      <useDomainConstraints>false</useDomainConstraints>
+      <use>1</use>
+      <logicalDatatype>LOGDT019</logicalDatatype>
+      <dataTypePrecision>10</dataTypePrecision>
+      <ownDataTypeParameters>,10,</ownDataTypeParameters>
+    </Attribute>
+    <Attribute name="CREATED_AT" id="86DE9BAC-F93D-4CC3-9E75-3C38829D78B1">
+      <createdBy>modeling</createdBy>
+      <createdTime>2026-10-26 08:00:00 UTC</createdTime>
+      <ownerDesignName>campusmarket</ownerDesignName>
+      <engineerTo>
+        <item key="A518C3FB-F6A04F4E09C7" value="true" />
+      </engineerTo>
+      <useDomainConstraints>false</useDomainConstraints>
+      <use>1</use>
+      <logicalDatatype>LOGDT007</logicalDatatype>
+      <ownDataTypeParameters>,,</ownDataTypeParameters>
+    </Attribute>
+  </attributes>
+  <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+    <identifier id="A0D8A63F-990F-67D9-8C61-29DA0240F50A" name="POST PK">
+      <createdBy>jjso0</createdBy>
+      <createdTime>2026-10-24 17:59:00 UTC</createdTime>
+      <ownerDesignName>campusmarket</ownerDesignName>
+      <engineerTo>
+        <item key="A518C3FB-5317-A641-7DDD-F6A04F4E09C7" value="true" />
+      </engineerTo>
+      <pk>true</pk>
+      <usedAttributes>
+        <attributeRef>65EB2E7D-FB1D-714E-B104-CB3E96B6A26E</attributeRef>
+      </usedAttributes>
+    </identifier>
+  </identifiers>
 </Entity>

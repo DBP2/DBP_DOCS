@@ -1,0 +1,175 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="05B19E6B-2A82-4D23-B8E0-E0BF56E3767A" name="SANCTION">
+<createdBy>lyw</createdBy>
+<createdTime>2026-10-26 12:00:00 UTC</createdTime>
+<comment><![CDATA[관리자(또는 신고 누적)로 회원에게 내린 제재 1건. 경고 / 기간 정지 / 영구 정지]]></comment>
+<ownerDesignName>campusmarket</ownerDesignName>
+<engineerTo>
+<item key="A518C3FB-5317-A641-7DDD-F6A04F4E09C7" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="SANCTION_ID" id="159AB832-2B06-4E8C-B6AA-1D3145E0AB90">
+<createdBy>lyw</createdBy>
+<createdTime>2026-10-26 12:00:00 UTC</createdTime>
+<comment><![CDATA[제재 번호 (PK, SANCTION_SEQ)]]></comment>
+<ownerDesignName>campusmarket</ownerDesignName>
+<engineerTo>
+<item key="A518C3FB-5317-A641-7DDD-F6A04F4E09C7" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="SANCTION_TYPE" id="C56DC2B8-3460-4D71-9749-7AAB6188562B">
+<createdBy>lyw</createdBy>
+<createdTime>2026-10-26 12:00:00 UTC</createdTime>
+<comment><![CDATA[제재 유형]]></comment>
+<ownerDesignName>campusmarket</ownerDesignName>
+<engineerTo>
+<item key="A518C3FB-5317-A641-7DDD-F6A04F4E09C7" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15</dataTypeSize>
+<listOfValues>
+<valueDef value="WARNING" description="경고 - 이용 제한 없음"/>
+<valueDef value="SUSPENSION" description="기간 정지"/>
+<valueDef value="BAN" description="영구 정지"/>
+</listOfValues>
+<ownDataTypeParameters>15,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="REASON" id="A6EF0894-19A0-4C2D-B4F1-D70F1C03D81C">
+<createdBy>lyw</createdBy>
+<createdTime>2026-10-26 12:00:00 UTC</createdTime>
+<comment><![CDATA[제재 사유 (이용 제한 안내 화면에 표시)]]></comment>
+<ownerDesignName>campusmarket</ownerDesignName>
+<engineerTo>
+<item key="A518C3FB-5317-A641-7DDD-F6A04F4E09C7" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>500</dataTypeSize>
+<ownDataTypeParameters>500,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="START_AT" id="700D20A9-47B3-4A0B-9066-DA1691053D09">
+<createdBy>lyw</createdBy>
+<createdTime>2026-10-26 12:00:00 UTC</createdTime>
+<comment><![CDATA[제재 시작 시각]]></comment>
+<ownerDesignName>campusmarket</ownerDesignName>
+<engineerTo>
+<item key="A518C3FB-5317-A641-7DDD-F6A04F4E09C7" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<defaultValue>SYSDATE</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="END_AT" id="77E23A92-F5B3-468F-970C-960DD456D17C">
+<createdBy>lyw</createdBy>
+<createdTime>2026-10-26 12:00:00 UTC</createdTime>
+<comment><![CDATA[정지 종료 시각. SUSPENSION만 값이 있고 WARNING·BAN은 NULL]]></comment>
+<ownerDesignName>campusmarket</ownerDesignName>
+<engineerTo>
+<item key="A518C3FB-5317-A641-7DDD-F6A04F4E09C7" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="IS_RELEASED" id="61ED59B0-7E14-4CB3-95D9-F362C433126F">
+<createdBy>lyw</createdBy>
+<createdTime>2026-10-26 12:00:00 UTC</createdTime>
+<comment><![CDATA[관리자가 해제했는지 (Y/N)]]></comment>
+<ownerDesignName>campusmarket</ownerDesignName>
+<engineerTo>
+<item key="A518C3FB-5317-A641-7DDD-F6A04F4E09C7" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<listOfValues>
+<valueDef value="N" description=""/>
+<valueDef value="Y" description=""/>
+</listOfValues>
+<defaultValue>N</defaultValue>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="RELEASED_AT" id="6448C8A7-496F-40B1-8369-249C9FB38483">
+<createdBy>lyw</createdBy>
+<createdTime>2026-10-26 12:00:00 UTC</createdTime>
+<comment><![CDATA[해제한 시각]]></comment>
+<ownerDesignName>campusmarket</ownerDesignName>
+<engineerTo>
+<item key="A518C3FB-5317-A641-7DDD-F6A04F4E09C7" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="TARGET_ID" id="BAAD315A-DA16-4B0D-8952-4FFC09C0E5B2">
+<createdBy>lyw</createdBy>
+<createdTime>2026-10-26 12:00:00 UTC</createdTime>
+<comment><![CDATA[제재받은 회원 (FK → MEMBER)]]></comment>
+<generatorID>014D1AC0-F80C-4E61-A00E-F950AC003479</generatorID>
+<ownerDesignName>campusmarket</ownerDesignName>
+<engineerTo>
+<item key="A518C3FB-5317-A641-7DDD-F6A04F4E09C7" value="true"/>
+</engineerTo>
+<referedAttribute>6677A75E-C576-0059-2DDC-0AA25B2F8F6B</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ADMIN_ID" id="ED7FA739-BD7D-495C-88D9-06157A61A7D8">
+<createdBy>lyw</createdBy>
+<createdTime>2026-10-26 12:00:00 UTC</createdTime>
+<comment><![CDATA[제재를 내린 관리자 (FK → MEMBER). 신고 누적 자동 제재면 NULL]]></comment>
+<generatorID>561A2BCB-805B-4E14-9DE7-6C2C9198BDAE</generatorID>
+<ownerDesignName>campusmarket</ownerDesignName>
+<engineerTo>
+<item key="A518C3FB-5317-A641-7DDD-F6A04F4E09C7" value="true"/>
+</engineerTo>
+<referedAttribute>6677A75E-C576-0059-2DDC-0AA25B2F8F6B</referedAttribute>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="796E108C-12B4-4289-96E7-EA6AFAAD9135" name="SANCTION PK">
+<createdBy>lyw</createdBy>
+<createdTime>2026-10-26 12:00:00 UTC</createdTime>
+<ownerDesignName>campusmarket</ownerDesignName>
+<engineerTo>
+<item key="A518C3FB-5317-A641-7DDD-F6A04F4E09C7" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>159AB832-2B06-4E8C-B6AA-1D3145E0AB90</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>
