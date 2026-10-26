@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="4759A226-AB82-408B-91FC-067812264D17" containerWithKeyObject="A88EB6FE-304E-4D15-B515-3EDE3D563C30" localFKIndex="947A674C-7E65-4CA3-ABF1-BDB183806003" name="POST_IMAGE_POST_FK">
+  <createdBy>modeling</createdBy>
+  <createdTime>2026-10-26 08:00:00 UTC</createdTime>
+  <ownerDesignName>campusmarket</ownerDesignName>
+  <generatorID>AEF7A43B-10FB-4C2F-A16C-8491E4BEBD8D</generatorID>
+  <referredTableLongName>POST</referredTableLongName>
+  <deleteRule>NO ACTION</deleteRule>
+  <referredTableID>4642A701-C60D-B1A7-41FF-323F698AC423</referredTableID>
+  <keyObject>BE8FFF61-0A76-9119-C81E-BE1CC1E3305D</keyObject>
+  <referredKeyID>BE8FFF61-0A76-9119-C81E-BE1CC1E3305D</referredKeyID>
+  <mandatory>true</mandatory>
+  <refColNames>POST_ID</refColNames>
+  <transferable>true</transferable>
+  <rely>false</rely>
+  <columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

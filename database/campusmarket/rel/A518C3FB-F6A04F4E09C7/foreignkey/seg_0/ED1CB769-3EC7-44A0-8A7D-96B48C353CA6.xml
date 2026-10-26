@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="ED1CB769-3EC7-44A0-8A7D-96B48C353CA6" containerWithKeyObject="4642A701-C60D-B1A7-41FF-323F698AC423" localFKIndex="EA9121CD-FBA8-4C4C-841D-73468D7FB3EA" name="POST_CATEGORY_FK">
+  <createdBy>modeling</createdBy>
+  <createdTime>2026-10-26 08:00:00 UTC</createdTime>
+  <ownerDesignName>campusmarket</ownerDesignName>
+  <generatorID>A7922FA0-7C9A-424B-93C6-E5CF1905994B</generatorID>
+  <referredTableLongName>CATEGORY</referredTableLongName>
+  <deleteRule>NO ACTION</deleteRule>
+  <referredTableID>432D2499-B053-4806-8EEC-7D45ACEEFF59</referredTableID>
+  <keyObject>B75F3657-C771-43C8-823B-8F6DA538BFDF</keyObject>
+  <referredKeyID>B75F3657-C771-43C8-823B-8F6DA538BFDF</referredKeyID>
+  <mandatory>true</mandatory>
+  <refColNames>CATEGORY_ID</refColNames>
+  <transferable>true</transferable>
+  <rely>false</rely>
+  <columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

@@ -1,0 +1,88 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="432D2499-B053-4806-8EEC-7D45ACEEFF59" name="CATEGORY">
+  <createdBy>modeling</createdBy>
+  <createdTime>2026-10-26 08:00:00 UTC</createdTime>
+  <ownerDesignName>campusmarket</ownerDesignName>
+  <generatorID>BA89706B-C4AC-47FB-B909-1863E6F81B42</generatorID>
+  <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+  <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+    <Column name="CATEGORY_ID" id="619DBA22-AE8A-449D-A86F-464124271762">
+      <createdBy>modeling</createdBy>
+      <createdTime>2026-10-26 08:00:00 UTC</createdTime>
+      <ownerDesignName>campusmarket</ownerDesignName>
+      <nullsAllowed>true</nullsAllowed>
+      <useDomainConstraints>false</useDomainConstraints>
+      <use>1</use>
+      <logicalDatatype>LOGDT019</logicalDatatype>
+      <dataTypePrecision>10</dataTypePrecision>
+      <ownDataTypeParameters>,10,</ownDataTypeParameters>
+      <autoIncrementCycle>false</autoIncrementCycle>
+      <generatorID>2AC11EC7-1D83-42A6-ABAB-DCAB3504673F</generatorID>
+    </Column>
+    <Column name="NAME" id="6D57BF67-27AE-4742-9D20-80AF7BA5C348">
+      <createdBy>modeling</createdBy>
+      <createdTime>2026-10-26 08:00:00 UTC</createdTime>
+      <ownerDesignName>campusmarket</ownerDesignName>
+      <nullsAllowed>true</nullsAllowed>
+      <useDomainConstraints>false</useDomainConstraints>
+      <use>1</use>
+      <logicalDatatype>LOGDT024</logicalDatatype>
+      <dataTypeSize>100</dataTypeSize>
+      <ownDataTypeParameters>,,</ownDataTypeParameters>
+      <autoIncrementCycle>false</autoIncrementCycle>
+      <generatorID>052DEEBE-4B56-45C5-B512-52A0E785C50A</generatorID>
+    </Column>
+    <Column name="COLLEGE" id="FFC6F9C7-24EB-4FDD-9B9C-C7A33D133D95">
+      <createdBy>modeling</createdBy>
+      <createdTime>2026-10-26 08:00:00 UTC</createdTime>
+      <ownerDesignName>campusmarket</ownerDesignName>
+      <nullsAllowed>true</nullsAllowed>
+      <useDomainConstraints>false</useDomainConstraints>
+      <use>1</use>
+      <logicalDatatype>LOGDT024</logicalDatatype>
+      <dataTypeSize>100</dataTypeSize>
+      <ownDataTypeParameters>,,</ownDataTypeParameters>
+      <autoIncrementCycle>false</autoIncrementCycle>
+      <generatorID>2F4EA2EF-E4A9-4058-B652-78878BC8D43A</generatorID>
+    </Column>
+    <Column name="GRADE" id="31D7084B-82BD-4C2C-9F14-6CD95B548DB4">
+      <createdBy>modeling</createdBy>
+      <createdTime>2026-10-26 08:00:00 UTC</createdTime>
+      <ownerDesignName>campusmarket</ownerDesignName>
+      <nullsAllowed>true</nullsAllowed>
+      <useDomainConstraints>false</useDomainConstraints>
+      <use>1</use>
+      <logicalDatatype>LOGDT019</logicalDatatype>
+      <dataTypePrecision>2</dataTypePrecision>
+      <ownDataTypeParameters>,2,</ownDataTypeParameters>
+      <autoIncrementCycle>false</autoIncrementCycle>
+      <generatorID>F8454355-82DC-4D13-969C-497D3253A2C5</generatorID>
+    </Column>
+    <Column name="CLASSIFICATION" id="1BE825F0-04C8-4987-867C-DFC2E058C883">
+      <createdBy>modeling</createdBy>
+      <createdTime>2026-10-26 08:00:00 UTC</createdTime>
+      <ownerDesignName>campusmarket</ownerDesignName>
+      <nullsAllowed>true</nullsAllowed>
+      <useDomainConstraints>false</useDomainConstraints>
+      <use>1</use>
+      <logicalDatatype>LOGDT024</logicalDatatype>
+      <dataTypeSize>50</dataTypeSize>
+      <ownDataTypeParameters>,,</ownDataTypeParameters>
+      <autoIncrementCycle>false</autoIncrementCycle>
+      <generatorID>F68758B7-A1EB-4102-B5E6-4BE345FD6F75</generatorID>
+    </Column>
+  </columns>
+  <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+    <ind_PK_UK id="B75F3657-C771-43C8-823B-8F6DA538BFDF" name="CATEGORY_PK">
+      <createdBy>modeling</createdBy>
+      <createdTime>2026-10-26 08:00:00 UTC</createdTime>
+      <ownerDesignName>campusmarket</ownerDesignName>
+      <pk>true</pk>
+      <indexState>Primary Constraint</indexState>
+      <isSurrogateKey>false</isSurrogateKey>
+      <indexColumnUsage>
+        <colUsage columnID="619DBA22-AE8A-449D-A86F-464124271762"/>
+      </indexColumnUsage>
+    </ind_PK_UK>
+  </indexes>
+</Table>

@@ -1,0 +1,88 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="A88EB6FE-304E-4D15-B515-3EDE3D563C30" name="POST_IMAGE">
+  <createdBy>modeling</createdBy>
+  <createdTime>2026-10-26 08:00:00 UTC</createdTime>
+  <generatorID>0AED07E1-1A4B-487B-8823-77D52342C3F6</generatorID>
+  <ownerDesignName>campusmarket</ownerDesignName>
+  <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+  <parsed>true</parsed>
+  <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+    <Column name="IMAGE_ID" id="C26A281F-A20B-40AF-B8B9-CB644844FF50">
+      <createdBy>modeling</createdBy>
+      <createdTime>2026-10-26 08:00:00 UTC</createdTime>
+      <generatorID>7AFED07A-5CC1-44F1-ABFC-5926E80FEF54</generatorID>
+      <ownerDesignName>campusmarket</ownerDesignName>
+      <useDomainConstraints>false</useDomainConstraints>
+      <use>1</use>
+      <logicalDatatype>LOGDT019</logicalDatatype>
+      <dataTypePrecision>10</dataTypePrecision>
+      <ownDataTypeParameters>,10,</ownDataTypeParameters>
+      <autoIncrementCycle>false</autoIncrementCycle>
+    </Column>
+    <Column name="POST_ID" id="38C43E10-3064-430C-A096-4AA1B6BB6098">
+      <createdBy>modeling</createdBy>
+      <createdTime>2026-10-26 08:00:00 UTC</createdTime>
+      <generatorID>B93734DD-CB14-4C0B-B589-E7970F9B5126</generatorID>
+      <ownerDesignName>campusmarket</ownerDesignName>
+      <useDomainConstraints>false</useDomainConstraints>
+      <use>1</use>
+      <logicalDatatype>LOGDT019</logicalDatatype>
+      <dataTypePrecision>10</dataTypePrecision>
+      <ownDataTypeParameters>,,</ownDataTypeParameters>
+      <autoIncrementCycle>false</autoIncrementCycle>
+      <associations>
+        <colAssociation fkAssociation="4759A226-AB82-408B-91FC-067812264D17" referredColumn="A84CD951-4548-76CC-4ED6-3D2BCC83A35F" />
+      </associations>
+    </Column>
+    <Column name="URL" id="788057DF-F634-4A99-A1FF-04CB5C861398">
+      <createdBy>modeling</createdBy>
+      <createdTime>2026-10-26 08:00:00 UTC</createdTime>
+      <generatorID>9ACC6526-A477-4774-BAAA-36D9619658A8</generatorID>
+      <ownerDesignName>campusmarket</ownerDesignName>
+      <nullsAllowed>true</nullsAllowed>
+      <useDomainConstraints>false</useDomainConstraints>
+      <use>1</use>
+      <logicalDatatype>LOGDT024</logicalDatatype>
+      <dataTypeSize>1000</dataTypeSize>
+      <ownDataTypeParameters>1000,,</ownDataTypeParameters>
+      <autoIncrementCycle>false</autoIncrementCycle>
+    </Column>
+    <Column name="IMAGE_ORDER" id="126FF3BD-A45E-4977-A08F-9582815A8E8B">
+      <createdBy>modeling</createdBy>
+      <createdTime>2026-10-26 08:00:00 UTC</createdTime>
+      <generatorID>EEBAE6FA-AA9F-4D08-868C-EB3A58F7636C</generatorID>
+      <ownerDesignName>campusmarket</ownerDesignName>
+      <nullsAllowed>false</nullsAllowed>
+      <useDomainConstraints>false</useDomainConstraints>
+      <use>1</use>
+      <logicalDatatype>LOGDT019</logicalDatatype>
+      <dataTypePrecision>2</dataTypePrecision>
+      <ownDataTypeParameters>,2,</ownDataTypeParameters>
+      <autoIncrementCycle>false</autoIncrementCycle>
+    </Column>
+  </columns>
+  <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+    <ind_PK_UK id="33A60109-6387-4878-A6A9-88D3FAD4D310" name="POST_IMAGE_PK">
+      <createdBy>modeling</createdBy>
+      <createdTime>2026-10-26 08:00:00 UTC</createdTime>
+      <ownerDesignName>campusmarket</ownerDesignName>
+      <pk>true</pk>
+      <indexState>Primary Constraint</indexState>
+      <isSurrogateKey>false</isSurrogateKey>
+      <indexColumnUsage>
+        <colUsage columnID="C26A281F-A20B-40AF-B8B9-CB644844FF50" />
+      </indexColumnUsage>
+    </ind_PK_UK>
+    <ind_PK_UK id="947A674C-7E65-4CA3-ABF1-BDB183806003" name="POST_IMAGE_POST_FK">
+      <createdBy>modeling</createdBy>
+      <createdTime>2026-10-26 08:00:00 UTC</createdTime>
+      <generatorID>AEF7A43B-10FB-4C2F-A16C-8491E4BEBD8D</generatorID>
+      <ownerDesignName>campusmarket</ownerDesignName>
+      <indexState>Foreign Key</indexState>
+      <isSurrogateKey>false</isSurrogateKey>
+      <indexColumnUsage>
+        <colUsage columnID="38C43E10-3064-430C-A096-4AA1B6BB6098" />
+      </indexColumnUsage>
+    </ind_PK_UK>
+  </indexes>
+</Table>

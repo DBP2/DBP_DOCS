@@ -1,0 +1,81 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="0AED07E1-1A4B-487B-8823-77D52342C3F6" name="POST_IMAGE">
+  <createdBy>modeling</createdBy>
+  <createdTime>2026-10-26 08:00:00 UTC</createdTime>
+  <ownerDesignName>campusmarket</ownerDesignName>
+  <engineerTo>
+    <item key="A518C3FB-F6A04F4E09C7" value="true" />
+  </engineerTo>
+  <fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+  <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+    <Attribute name="IMAGE_ID" id="7AFED07A-5CC1-44F1-ABFC-5926E80FEF54">
+      <createdBy>modeling</createdBy>
+      <createdTime>2026-10-26 08:00:00 UTC</createdTime>
+      <ownerDesignName>campusmarket</ownerDesignName>
+      <engineerTo>
+        <item key="A518C3FB-F6A04F4E09C7" value="true" />
+      </engineerTo>
+      <useDomainConstraints>false</useDomainConstraints>
+      <use>1</use>
+      <logicalDatatype>LOGDT019</logicalDatatype>
+      <dataTypePrecision>10</dataTypePrecision>
+      <ownDataTypeParameters>,10,</ownDataTypeParameters>
+    </Attribute>
+    <Attribute name="POST_ID" id="B93734DD-CB14-4C0B-B589-E7970F9B5126">
+      <createdBy>modeling</createdBy>
+      <createdTime>2026-10-26 08:00:00 UTC</createdTime>
+      <ownerDesignName>campusmarket</ownerDesignName>
+      <engineerTo>
+        <item key="A518C3FB-F6A04F4E09C7" value="true" />
+      </engineerTo>
+      <useDomainConstraints>false</useDomainConstraints>
+      <use>1</use>
+      <logicalDatatype>LOGDT019</logicalDatatype>
+      <dataTypePrecision>10</dataTypePrecision>
+      <ownDataTypeParameters>,10,</ownDataTypeParameters>
+      <generatorID>AEF7A43B-10FB-4C2F-A16C-8491E4BEBD8D</generatorID>
+      <referedAttribute>65EB2E7D-FB1D-714E-B104-CB3E96B6A26E</referedAttribute>
+    </Attribute>
+    <Attribute name="URL" id="9ACC6526-A477-4774-BAAA-36D9619658A8">
+      <createdBy>modeling</createdBy>
+      <createdTime>2026-10-26 08:00:00 UTC</createdTime>
+      <ownerDesignName>campusmarket</ownerDesignName>
+      <engineerTo>
+        <item key="A518C3FB-F6A04F4E09C7" value="true" />
+      </engineerTo>
+      <useDomainConstraints>false</useDomainConstraints>
+      <use>1</use>
+      <logicalDatatype>LOGDT024</logicalDatatype>
+      <dataTypeSize>1000</dataTypeSize>
+      <ownDataTypeParameters>,,</ownDataTypeParameters>
+    </Attribute>
+    <Attribute name="IMAGE_ORDER" id="EEBAE6FA-AA9F-4D08-868C-EB3A58F7636C">
+      <createdBy>modeling</createdBy>
+      <createdTime>2026-10-26 08:00:00 UTC</createdTime>
+      <ownerDesignName>campusmarket</ownerDesignName>
+      <engineerTo>
+        <item key="A518C3FB-F6A04F4E09C7" value="true" />
+      </engineerTo>
+      <useDomainConstraints>false</useDomainConstraints>
+      <use>1</use>
+      <logicalDatatype>LOGDT019</logicalDatatype>
+      <dataTypePrecision>2</dataTypePrecision>
+      <ownDataTypeParameters>,2,</ownDataTypeParameters>
+      <mandatory>true</mandatory>
+    </Attribute>
+  </attributes>
+  <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+    <identifier id="828E68A4-8012-4BFC-94D1-16EF0D8FC943" name="POST_IMAGE PK">
+      <createdBy>modeling</createdBy>
+      <createdTime>2026-10-26 08:00:00 UTC</createdTime>
+      <ownerDesignName>campusmarket</ownerDesignName>
+      <engineerTo>
+        <item key="A518C3FB-F6A04F4E09C7" value="true" />
+      </engineerTo>
+      <pk>true</pk>
+      <usedAttributes>
+        <attributeRef>7AFED07A-5CC1-44F1-ABFC-5926E80FEF54</attributeRef>
+      </usedAttributes>
+    </identifier>
+  </identifiers>
+</Entity>

@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="F7E2846B-15FF-4F3C-ADBD-F20622893726" containerWithKeyObject="56F1F948-6F36-45EC-B607-F5FC592C225C" localFKIndex="4C7D9780-0C10-42E9-A1D2-CB411CD870B7" name="REVIEW_TRADE_FK">
+  <createdBy>modeling</createdBy>
+  <createdTime>2026-10-26 08:00:00 UTC</createdTime>
+  <ownerDesignName>campusmarket</ownerDesignName>
+  <generatorID>D2823BFA-650B-41E8-B6E7-BDF9FC194E62</generatorID>
+  <referredTableLongName>TRADE</referredTableLongName>
+  <deleteRule>NO ACTION</deleteRule>
+  <referredTableID>F0A24956-D85D-A9A5-29B3-94A5A9E3CF8E</referredTableID>
+  <keyObject>5D3F39E7-64FA-88E2-1EE8-78164BC37788</keyObject>
+  <referredKeyID>5D3F39E7-64FA-88E2-1EE8-78164BC37788</referredKeyID>
+  <mandatory>true</mandatory>
+  <refColNames>TRADE_ID</refColNames>
+  <transferable>true</transferable>
+  <rely>false</rely>
+  <columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

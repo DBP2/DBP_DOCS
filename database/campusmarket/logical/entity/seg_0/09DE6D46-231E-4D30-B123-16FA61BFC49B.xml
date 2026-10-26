@@ -1,0 +1,98 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="09DE6D46-231E-4D30-B123-16FA61BFC49B" name="SCHOOL">
+<createdBy>lyw</createdBy>
+<createdTime>2026-10-26 12:00:00 UTC</createdTime>
+<comment><![CDATA[더미 학교 데이터 5곳. 가입 시 학교 선택 목록 (조회 전용)]]></comment>
+<ownerDesignName>campusmarket</ownerDesignName>
+<engineerTo>
+<item key="A518C3FB-5317-A641-7DDD-F6A04F4E09C7" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="SCHOOL_ID" id="03AAD501-A2D5-450D-9A71-74CE5A8E52E7">
+<createdBy>lyw</createdBy>
+<createdTime>2026-10-26 12:00:00 UTC</createdTime>
+<comment><![CDATA[학교 번호 (PK, SCHOOL_SEQ)]]></comment>
+<ownerDesignName>campusmarket</ownerDesignName>
+<engineerTo>
+<item key="A518C3FB-5317-A641-7DDD-F6A04F4E09C7" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,5,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="SCHOOL_NAME" id="5BDC1272-6C3E-44C7-A7D8-938344FD9000">
+<createdBy>lyw</createdBy>
+<createdTime>2026-10-26 12:00:00 UTC</createdTime>
+<comment><![CDATA[학교 이름 (예: 동덕여자대학교)]]></comment>
+<ownerDesignName>campusmarket</ownerDesignName>
+<engineerTo>
+<item key="A518C3FB-5317-A641-7DDD-F6A04F4E09C7" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="EMAIL_DOMAIN" id="A293AFF8-8940-4AF6-8EF7-A87A6FF6F46C">
+<createdBy>lyw</createdBy>
+<createdTime>2026-10-26 12:00:00 UTC</createdTime>
+<comment><![CDATA[학교 웹메일 도메인 (예: dongduk.ac.kr)]]></comment>
+<ownerDesignName>campusmarket</ownerDesignName>
+<engineerTo>
+<item key="A518C3FB-5317-A641-7DDD-F6A04F4E09C7" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="CD73C666-3059-4232-9832-D22189EC3448" name="SCHOOL PK">
+<createdBy>lyw</createdBy>
+<createdTime>2026-10-26 12:00:00 UTC</createdTime>
+<ownerDesignName>campusmarket</ownerDesignName>
+<engineerTo>
+<item key="A518C3FB-5317-A641-7DDD-F6A04F4E09C7" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>03AAD501-A2D5-450D-9A71-74CE5A8E52E7</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="CE33C45F-BD44-4829-A64A-F6D1CF279F01" name="SCHOOL_NAME_UK">
+<createdBy>lyw</createdBy>
+<createdTime>2026-10-26 12:00:00 UTC</createdTime>
+<ownerDesignName>campusmarket</ownerDesignName>
+<engineerTo>
+<item key="A518C3FB-5317-A641-7DDD-F6A04F4E09C7" value="true"/>
+</engineerTo>
+<usedAttributes>
+<attributeRef>5BDC1272-6C3E-44C7-A7D8-938344FD9000</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="E714A9D2-7EFA-4DCC-80BF-ACCE7B13A76C" name="SCHOOL_DOMAIN_UK">
+<createdBy>lyw</createdBy>
+<createdTime>2026-10-26 12:00:00 UTC</createdTime>
+<ownerDesignName>campusmarket</ownerDesignName>
+<engineerTo>
+<item key="A518C3FB-5317-A641-7DDD-F6A04F4E09C7" value="true"/>
+</engineerTo>
+<usedAttributes>
+<attributeRef>A293AFF8-8940-4AF6-8EF7-A87A6FF6F46C</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

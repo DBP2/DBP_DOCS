@@ -1,0 +1,8 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<SequenceOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.SequenceOraclev10g" name="SEQ_POST" directorySegmentName="seg_0" id="EC0922F6-D9B9-48E0-98FB-B9540F697C2A">
+<createdBy>jjso0</createdBy>
+<createdTime>2026-10-24 18:51:39 UTC</createdTime>
+<ownerDesignName>campusmarket</ownerDesignName>
+<incrementBy>1</incrementBy>
+<startWith>1</startWith>
+</SequenceOraclev10g>

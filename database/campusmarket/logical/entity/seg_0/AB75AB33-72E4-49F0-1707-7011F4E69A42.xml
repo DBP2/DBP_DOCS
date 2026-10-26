@@ -2,6 +2,7 @@
 <Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="AB75AB33-72E4-49F0-1707-7011F4E69A42" name="MEMBER">
 <createdBy>jjso0</createdBy>
 <createdTime>2026-10-24 17:57:58 UTC</createdTime>
+<comment><![CDATA[회원 계정. 일반 회원은 학적(STUDENT) 확인 후 가입, 관리자는 MEMBER_ROLE = ADMIN]]></comment>
 <ownerDesignName>campusmarket</ownerDesignName>
 <engineerTo>
 <item key="A518C3FB-5317-A641-7DDD-F6A04F4E09C7" value="true"/>
@@ -28,6 +29,150 @@
 <dataTypeSize>20</dataTypeSize>
 <ownDataTypeParameters>20,,</ownDataTypeParameters>
 </Attribute>
+<Attribute name="PASSWORD" id="381EED1C-05A8-485E-977A-8C0859135AA4">
+<createdBy>lyw</createdBy>
+<createdTime>2026-10-26 12:00:00 UTC</createdTime>
+<comment><![CDATA[비밀번호]]></comment>
+<ownerDesignName>campusmarket</ownerDesignName>
+<engineerTo>
+<item key="A518C3FB-5317-A641-7DDD-F6A04F4E09C7" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="NICKNAME" id="7F15F409-CB08-4F83-A0DD-8220297834B0">
+<createdBy>lyw</createdBy>
+<createdTime>2026-10-26 12:00:00 UTC</createdTime>
+<comment><![CDATA[화면에 표시되는 이름. 중복 불가]]></comment>
+<ownerDesignName>campusmarket</ownerDesignName>
+<engineerTo>
+<item key="A518C3FB-5317-A641-7DDD-F6A04F4E09C7" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="PROFILE_IMAGE" id="44047906-F8A3-41AC-8FDC-B61510B47D2F">
+<createdBy>lyw</createdBy>
+<createdTime>2026-10-26 12:00:00 UTC</createdTime>
+<comment><![CDATA[프로필 사진 경로]]></comment>
+<ownerDesignName>campusmarket</ownerDesignName>
+<engineerTo>
+<item key="A518C3FB-5317-A641-7DDD-F6A04F4E09C7" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>500</dataTypeSize>
+<ownDataTypeParameters>500,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="INTRODUCTION" id="9F6426FC-C554-4080-9497-B17C0D8E0ACE">
+<createdBy>lyw</createdBy>
+<createdTime>2026-10-26 12:00:00 UTC</createdTime>
+<comment><![CDATA[자기소개]]></comment>
+<ownerDesignName>campusmarket</ownerDesignName>
+<engineerTo>
+<item key="A518C3FB-5317-A641-7DDD-F6A04F4E09C7" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>300</dataTypeSize>
+<ownDataTypeParameters>300,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="TRUST_SCORE" id="E12F1923-7916-4BAD-B039-B21C897E530B">
+<createdBy>lyw</createdBy>
+<createdTime>2026-10-26 12:00:00 UTC</createdTime>
+<comment><![CDATA[신뢰 점수 (거래·리뷰 결과로 변동)]]></comment>
+<ownerDesignName>campusmarket</ownerDesignName>
+<engineerTo>
+<item key="A518C3FB-5317-A641-7DDD-F6A04F4E09C7" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<defaultValue>0</defaultValue>
+<ownDataTypeParameters>,5,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="MEMBER_ROLE" id="B7FD6865-D2AD-4010-B4ED-E4CC8853D0D1">
+<createdBy>lyw</createdBy>
+<createdTime>2026-10-26 12:00:00 UTC</createdTime>
+<comment><![CDATA[권한 (ROLE은 예약어라 MEMBER_ROLE)]]></comment>
+<ownerDesignName>campusmarket</ownerDesignName>
+<engineerTo>
+<item key="A518C3FB-5317-A641-7DDD-F6A04F4E09C7" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<listOfValues>
+<valueDef value="USER" description="일반 회원"/>
+<valueDef value="ADMIN" description="관리자"/>
+</listOfValues>
+<defaultValue>USER</defaultValue>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="MEMBER_STATUS" id="4D7AB69F-C047-4213-898E-81481BC77683">
+<createdBy>lyw</createdBy>
+<createdTime>2026-10-26 12:00:00 UTC</createdTime>
+<comment><![CDATA[회원 상태]]></comment>
+<ownerDesignName>campusmarket</ownerDesignName>
+<engineerTo>
+<item key="A518C3FB-5317-A641-7DDD-F6A04F4E09C7" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15</dataTypeSize>
+<listOfValues>
+<valueDef value="ACTIVE" description="정상"/>
+<valueDef value="SUSPENDED" description="기간 정지"/>
+<valueDef value="BANNED" description="영구 정지"/>
+<valueDef value="WITHDRAWN" description="탈퇴"/>
+</listOfValues>
+<defaultValue>ACTIVE</defaultValue>
+<ownDataTypeParameters>15,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="CREATED_AT" id="CEF73989-7695-453E-899E-C770731B46D5">
+<createdBy>lyw</createdBy>
+<createdTime>2026-10-26 12:00:00 UTC</createdTime>
+<comment><![CDATA[가입 시각]]></comment>
+<ownerDesignName>campusmarket</ownerDesignName>
+<engineerTo>
+<item key="A518C3FB-5317-A641-7DDD-F6A04F4E09C7" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<defaultValue>SYSDATE</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="STUDENT_ID" id="3564BFBF-7E38-483E-8152-0FFD1C948448">
+<createdBy>lyw</createdBy>
+<createdTime>2026-10-26 12:00:00 UTC</createdTime>
+<comment><![CDATA[가입 때 확인된 학적 (FK → STUDENT). 학생 1명당 계정 1개(UK). 관리자 계정은 NULL 가능]]></comment>
+<generatorID>75EC6E9F-C166-4122-8962-C67183E8C0D6</generatorID>
+<ownerDesignName>campusmarket</ownerDesignName>
+<engineerTo>
+<item key="A518C3FB-5317-A641-7DDD-F6A04F4E09C7" value="true"/>
+</engineerTo>
+<referedAttribute>9C3D5FBF-1591-4186-9BAC-EEEB02BED95B</referedAttribute>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
 <identifier id="F6988D5F-2AF9-8DC1-99DA-3FD1D15F5331" name="MEMBER PK">
@@ -40,6 +185,28 @@
 <pk>true</pk>
 <usedAttributes>
 <attributeRef>6677A75E-C576-0059-2DDC-0AA25B2F8F6B</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="CD6246E0-21EF-4EDE-9DB6-26A7DBF5EF85" name="MEMBER_NICKNAME_UK">
+<createdBy>lyw</createdBy>
+<createdTime>2026-10-26 12:00:00 UTC</createdTime>
+<ownerDesignName>campusmarket</ownerDesignName>
+<engineerTo>
+<item key="A518C3FB-5317-A641-7DDD-F6A04F4E09C7" value="true"/>
+</engineerTo>
+<usedAttributes>
+<attributeRef>7F15F409-CB08-4F83-A0DD-8220297834B0</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="734B4E7B-AE4F-43A0-8874-2EA7FF416972" name="MEMBER_STUDENT_UK">
+<createdBy>lyw</createdBy>
+<createdTime>2026-10-26 12:00:00 UTC</createdTime>
+<ownerDesignName>campusmarket</ownerDesignName>
+<engineerTo>
+<item key="A518C3FB-5317-A641-7DDD-F6A04F4E09C7" value="true"/>
+</engineerTo>
+<usedAttributes>
+<attributeRef>3564BFBF-7E38-483E-8152-0FFD1C948448</attributeRef>
 </usedAttributes>
 </identifier>
 </identifiers>

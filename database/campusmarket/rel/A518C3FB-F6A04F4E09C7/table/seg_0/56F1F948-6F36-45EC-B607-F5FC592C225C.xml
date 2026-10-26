@@ -1,0 +1,123 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="56F1F948-6F36-45EC-B607-F5FC592C225C" name="REVIEW">
+  <createdBy>modeling</createdBy>
+  <createdTime>2026-10-26 08:00:00 UTC</createdTime>
+  <ownerDesignName>campusmarket</ownerDesignName>
+  <generatorID>5EC36FD8-3304-4D43-B04E-891BDD2C81DA</generatorID>
+  <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+  <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+    <Column name="REVIEW_ID" id="7DB1E814-2EC0-491C-A479-16B84BD8ED9F">
+      <createdBy>modeling</createdBy>
+      <createdTime>2026-10-26 08:00:00 UTC</createdTime>
+      <ownerDesignName>campusmarket</ownerDesignName>
+      <nullsAllowed>true</nullsAllowed>
+      <useDomainConstraints>false</useDomainConstraints>
+      <use>1</use>
+      <logicalDatatype>LOGDT019</logicalDatatype>
+      <dataTypePrecision>10</dataTypePrecision>
+      <ownDataTypeParameters>,10,</ownDataTypeParameters>
+      <autoIncrementCycle>false</autoIncrementCycle>
+      <generatorID>C055AE7B-213F-4DE6-8A75-72E3DA992F06</generatorID>
+    </Column>
+    <Column name="TRADE_ID" id="AB89A4E8-2CB2-4170-B338-9536530E1A80">
+      <createdBy>modeling</createdBy>
+      <createdTime>2026-10-26 08:00:00 UTC</createdTime>
+      <ownerDesignName>campusmarket</ownerDesignName>
+      <useDomainConstraints>false</useDomainConstraints>
+      <use>1</use>
+      <logicalDatatype>LOGDT019</logicalDatatype>
+      <dataTypePrecision>10</dataTypePrecision>
+      <ownDataTypeParameters>,10,</ownDataTypeParameters>
+      <autoIncrementCycle>false</autoIncrementCycle>
+      <generatorID>F9D834D0-6565-44C4-B48C-3AA331EDE4E0</generatorID>
+    <associations><colAssociation fkAssociation="F7E2846B-15FF-4F3C-ADBD-F20622893726" referredColumn="0BC5ECC9-472B-F3D6-9C01-E59FF27083CC"/></associations></Column>
+    <Column name="WRITER_ID" id="C2A54748-B18D-4251-ACAC-8428C841040F">
+      <createdBy>modeling</createdBy>
+      <createdTime>2026-10-26 08:00:00 UTC</createdTime>
+      <ownerDesignName>campusmarket</ownerDesignName>
+      <useDomainConstraints>false</useDomainConstraints>
+      <use>1</use>
+      <logicalDatatype>LOGDT024</logicalDatatype>
+      <dataTypeSize>20</dataTypeSize>
+      <ownDataTypeParameters>,,</ownDataTypeParameters>
+      <autoIncrementCycle>false</autoIncrementCycle>
+      <generatorID>B2581828-2EEB-415E-B8A4-74CF36822E38</generatorID>
+    <associations><colAssociation fkAssociation="6CECCA8E-C8C3-4376-9BD5-5273E36F9C34" referredColumn="4224126A-9740-85BC-5D48-2ECC0B0627AE"/></associations></Column>
+    <Column name="TARGET_ID" id="E68B52DF-F84C-4033-8133-275664C243B9">
+      <createdBy>modeling</createdBy>
+      <createdTime>2026-10-26 08:00:00 UTC</createdTime>
+      <ownerDesignName>campusmarket</ownerDesignName>
+      <useDomainConstraints>false</useDomainConstraints>
+      <use>1</use>
+      <logicalDatatype>LOGDT024</logicalDatatype>
+      <dataTypeSize>20</dataTypeSize>
+      <ownDataTypeParameters>,,</ownDataTypeParameters>
+      <autoIncrementCycle>false</autoIncrementCycle>
+      <generatorID>4F5E11C7-AF92-40FE-9B78-505AF7C92574</generatorID>
+    <associations><colAssociation fkAssociation="30E39127-3844-4207-A831-6D81588D2E7C" referredColumn="4224126A-9740-85BC-5D48-2ECC0B0627AE"/></associations></Column>
+    <Column name="RATING" id="34D5D1D5-0567-40CE-B3A2-9617CAB7E761">
+      <createdBy>modeling</createdBy>
+      <createdTime>2026-10-26 08:00:00 UTC</createdTime>
+      <ownerDesignName>campusmarket</ownerDesignName>
+      <nullsAllowed>true</nullsAllowed>
+      <useDomainConstraints>false</useDomainConstraints>
+      <use>1</use>
+      <logicalDatatype>LOGDT019</logicalDatatype>
+      <dataTypePrecision>1</dataTypePrecision>
+      <ownDataTypeParameters>,1,</ownDataTypeParameters>
+      <autoIncrementCycle>false</autoIncrementCycle>
+      <generatorID>B92419C9-A44A-4672-9AF9-DF1C4F65FD93</generatorID>
+    </Column>
+    <Column name="KEYWORDS" id="2B2897D6-E970-43A8-B46A-5167E247725D">
+      <createdBy>modeling</createdBy>
+      <createdTime>2026-10-26 08:00:00 UTC</createdTime>
+      <ownerDesignName>campusmarket</ownerDesignName>
+      <nullsAllowed>true</nullsAllowed>
+      <useDomainConstraints>false</useDomainConstraints>
+      <use>1</use>
+      <logicalDatatype>LOGDT024</logicalDatatype>
+      <dataTypeSize>500</dataTypeSize>
+      <ownDataTypeParameters>,,</ownDataTypeParameters>
+      <autoIncrementCycle>false</autoIncrementCycle>
+      <generatorID>457EDF5D-4A85-44BA-B49D-D5A1A4ED29CA</generatorID>
+    </Column>
+    <Column name="CONTENT" id="1B12BE06-4CB3-4427-9C0C-236FB140D2F2">
+      <createdBy>modeling</createdBy>
+      <createdTime>2026-10-26 08:00:00 UTC</createdTime>
+      <ownerDesignName>campusmarket</ownerDesignName>
+      <nullsAllowed>true</nullsAllowed>
+      <useDomainConstraints>false</useDomainConstraints>
+      <use>1</use>
+      <logicalDatatype>LOGDT024</logicalDatatype>
+      <dataTypeSize>2000</dataTypeSize>
+      <ownDataTypeParameters>,,</ownDataTypeParameters>
+      <autoIncrementCycle>false</autoIncrementCycle>
+      <generatorID>92CF3683-AFBD-4367-8037-9E5A824A0394</generatorID>
+    </Column>
+    <Column name="CREATED_AT" id="7F041F84-73F7-43FE-B323-457C64166B8E">
+      <createdBy>modeling</createdBy>
+      <createdTime>2026-10-26 08:00:00 UTC</createdTime>
+      <ownerDesignName>campusmarket</ownerDesignName>
+      <nullsAllowed>true</nullsAllowed>
+      <useDomainConstraints>false</useDomainConstraints>
+      <use>1</use>
+      <logicalDatatype>LOGDT007</logicalDatatype>
+      <ownDataTypeParameters>,,</ownDataTypeParameters>
+      <autoIncrementCycle>false</autoIncrementCycle>
+      <generatorID>F7099A05-56E7-4F91-92CC-670897CC7EB0</generatorID>
+    </Column>
+  </columns>
+  <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+    <ind_PK_UK id="0A394FD6-DFFF-4ED7-BD3E-8E182ED6F2A4" name="REVIEW_PK">
+      <createdBy>modeling</createdBy>
+      <createdTime>2026-10-26 08:00:00 UTC</createdTime>
+      <ownerDesignName>campusmarket</ownerDesignName>
+      <pk>true</pk>
+      <indexState>Primary Constraint</indexState>
+      <isSurrogateKey>false</isSurrogateKey>
+      <indexColumnUsage>
+        <colUsage columnID="7DB1E814-2EC0-491C-A479-16B84BD8ED9F"/>
+      </indexColumnUsage>
+    </ind_PK_UK>
+  <ind_PK_UK id="4C7D9780-0C10-42E9-A1D2-CB411CD870B7" name="REVIEW_TRADE_FK"><createdBy>modeling</createdBy><createdTime>2026-10-26 08:00:00 UTC</createdTime><ownerDesignName>campusmarket</ownerDesignName><generatorID>D2823BFA-650B-41E8-B6E7-BDF9FC194E62</generatorID><indexState>Foreign Key</indexState><isSurrogateKey>false</isSurrogateKey><indexColumnUsage><colUsage columnID="AB89A4E8-2CB2-4170-B338-9536530E1A80"/></indexColumnUsage></ind_PK_UK><ind_PK_UK id="39E7D561-F9DA-4A31-86E3-22A9BEA68217" name="REVIEW_WRITER_FK"><createdBy>modeling</createdBy><createdTime>2026-10-26 08:00:00 UTC</createdTime><ownerDesignName>campusmarket</ownerDesignName><generatorID>419A129A-3AAB-4A10-9416-D7C694BE3DDC</generatorID><indexState>Foreign Key</indexState><isSurrogateKey>false</isSurrogateKey><indexColumnUsage><colUsage columnID="C2A54748-B18D-4251-ACAC-8428C841040F"/></indexColumnUsage></ind_PK_UK><ind_PK_UK id="E2AD4443-85E5-4144-A408-C71EEC273366" name="REVIEW_TARGET_FK"><createdBy>modeling</createdBy><createdTime>2026-10-26 08:00:00 UTC</createdTime><ownerDesignName>campusmarket</ownerDesignName><generatorID>E082B0EE-85BC-4C34-85DA-71611D8A6F60</generatorID><indexState>Foreign Key</indexState><isSurrogateKey>false</isSurrogateKey><indexColumnUsage><colUsage columnID="E68B52DF-F84C-4033-8133-275664C243B9"/></indexColumnUsage></ind_PK_UK></indexes>
+</Table>
